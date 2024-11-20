@@ -41,6 +41,11 @@ body {
     text-decoration: none; 
 }
 
+.header a.active {
+    color: white; 
+    text-decoration: underline; 
+}
+
 .main-section {
     background-color: white;
     color: black;
@@ -54,7 +59,9 @@ body {
 
 .about-section,
 .competitions-section, 
-.contact-section {
+.contact-section, 
+.upcoming-section, 
+.past-section {
     background-color: #f5f5f5;
     color: black;
     padding: 20px;
@@ -85,11 +92,6 @@ body {
     text-decoration: underline;
 }
 
-.header a,
-.header a:visited {
-    color: #808080; 
-}
-
 .main-section a,
 .about-section a,
 .competitions-section a,
@@ -116,5 +118,18 @@ body {
 .competitions-section h2 a:hover,
 .contact-section h2 a:hover {
     text-decoration: underline;
+}
+
+.past-section li a {
+    color: #f52a2a; 
+    text-decoration: none; 
+}
+
+.past-section li a:visited {
+    color: #f52a2a; 
+}
+
+.past-section li a:hover {
+    text-decoration: underline; 
 }
     </style>
