@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us | Speedcubing New Zealand</title>
+    <title>Speedcubing New Zealand</title>
     <style>
 body {
     margin: 0;
@@ -18,6 +18,12 @@ body {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
+}
+
+
+body.homepage .header h1 a {
+    color: white; 
+    text-decoration: none; 
 }
 
 .header h1 a {
@@ -49,7 +55,7 @@ body {
 
 .header a.active {
     color: white; 
-    text-decoration: underline; 
+    text-decoration: underline; /* Underline the active link */
 }
 
 .main-section {
@@ -65,7 +71,9 @@ body {
 
 .about-section,
 .competitions-section, 
-.contact-section {
+.contact-section, 
+.upcoming-section, 
+.past-section {
     background-color: #f5f5f5;
     color: black;
     padding: 20px;
@@ -125,16 +133,32 @@ body {
 }
     </style> 
 </head>
-<body>
+<body class="homepage">
     <header class="header">
         <b><h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1></b>
-        <div>
+         <div>
             <strong><a href="about_us.html">About us</a></strong>
             <strong><a href="competitions.html">Competitions</a></strong>
-            <strong><a href="contact_us.html" class="active" >Contact us </a></strong>
+            <strong><a href="contact_us.html">Contact us</a></strong>
         </div>
     </header>
-     <footer class="footer">
+         <section class="about-section">
+        <h2><a href="about_us.html">About Us</a></h2>
+        <p>Speedcubing New Zealand (SNZ) is a WCA-accredited <a href="https://www.worldcubeassociation.org/organizations">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
+    </section>
+    
+    <section class="competitions-section">
+        <h2><a href="competitions.html">Competitions</a></h2>
+        <p>Competitions are organised by members of the local community, funded by SNZ and recognised by the <a href="https://www.worldcubeassociation.org">World Cube Association (WCA)</a>.</p>
+        <p>View all our upcoming competitions <a href="competitions.html">here!</p>
+    </section>
+    
+    <section class="contact-section">
+        <h2><a href="contact_us.html">Contact us</h2>
+        <p>Contact us <a href="contact_us.html">here.</p>
+    </section>   
+    
+    <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
     </footer>
 </body>
