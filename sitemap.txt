@@ -4,3 +4,5 @@ Home
 About
 Competitions
 Contact us
+
+Styles
