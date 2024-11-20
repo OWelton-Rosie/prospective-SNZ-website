@@ -20,8 +20,20 @@ body {
     align-items: center; 
 }
 
-.header h1 {
-    margin-left: 30px;
+/* Specific for homepage to remove any effect on the Speedcubing New Zealand link */
+body.homepage .header h1 a {
+    color: white; /* White color for the homepage header */
+    text-decoration: none; /* No underline or highlight */
+}
+
+.header h1 a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.header h1 a:hover {
+    color: white; 
+    text-decoration: none; 
 }
 
 .header a {
@@ -39,6 +51,11 @@ body {
 .header a:hover {
     color: white !important; 
     text-decoration: none; 
+}
+
+.header a.active {
+    color: white; 
+    text-decoration: underline; /* Underline the active link */
 }
 
 .main-section {
@@ -85,11 +102,6 @@ body {
     text-decoration: underline;
 }
 
-.header a,
-.header a:visited {
-    color: #808080; 
-}
-
 .main-section a,
 .about-section a,
 .competitions-section a,
@@ -105,29 +117,44 @@ body {
     text-decoration: underline; 
 }
 
-    </style>
+.about-section h2 a,
+.competitions-section h2 a,
+.contact-section h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.about-section h2 a:hover,
+.competitions-section h2 a:hover,
+.contact-section h2 a:hover {
+    text-decoration: underline;
+}
+    </style> 
 </head>
-<body>
+<body class="homepage">
     <header class="header">
-        <b><h1>Speedcubing New Zealand</h1></b>
-        <div>
-            <strong><a href="https://www.google.com">About</a></strong>
-            <strong><a href="https://www.google.com">Competitions</a></strong>
-            <strong><a href="https://www.google.com">Contact us</a></strong>
+        <b><h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1></b>
+         <div>
+            <strong><a href="about_us.html" class="active">About us</a></strong>
+            <strong><a href="competitions.html">Competitions</a></strong>
+            <strong><a href="contact_us.html">Contact us</a></strong>
         </div>
     </header>
-    <section class="about-section">
+         <section class="about-section">
         <h2>About Us</h2>
         <p>Speedcubing New Zealand (SNZ) is a WCA-accredited <a href="https://www.worldcubeassociation.org/organizations">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
     </section>
+    
     <section class="competitions-section">
         <h2>Competitions</h2>
         <p>Competitions are organised by members of the local community, funded by SNZ and recognised by the <a href="https://www.worldcubeassociation.org">World Cube Association (WCA)</a>.</p>
         <p>View all our upcoming competitions here!</p>
     </section>
+    
     <section class="contact-section">
         <h2>Contact us</h2>
-    </section>    
+    </section>   
+    
     <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
     </footer>
