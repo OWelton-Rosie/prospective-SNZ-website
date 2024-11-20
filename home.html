@@ -15,16 +15,27 @@ body {
     color: white;
     padding: 20px;
     text-align: left;
-    border-radius: 8px 8px 0 0; /* Rounded top corners for header */
+    /* Removed the border-radius property to make the header sharp-cornered */
     display: flex; /* Use flexbox for header */
     justify-content: space-between; /* Space out the elements inside the header */
     align-items: center; /* Vertically align the header items */
 }
 
 .header a {
-    color: white;
+    color: #808080; /* Default link color to grey */
     text-decoration: none;
     margin-left: 20px; /* Space between links */
+}
+
+.header a:visited {
+    color: #808080; /* Keep visited links grey */
+}
+
+.header a:active,
+.header a:focus,
+.header a:hover {
+    color: white !important; /* Make links white on hover, active or focused */
+    text-decoration: none; /* Remove underline from active/focused/hovered links */
 }
 
 .main-section {
@@ -38,7 +49,8 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.about-section {
+.about-section,
+.competitions-section {
     background-color: #f5f5f5;
     color: black;
     padding: 20px;
@@ -55,34 +67,62 @@ body {
     color: white;
     padding: 10px 20px;
     font-size: 14px;
-    border-top: 1px solid #444;
+    border-top: 1px solid transparent; /* Set the border to transparent */
     text-align: left;
     margin-top: 40px;
-    border-radius: 0 0 8px 8px;
+    /* Remove the border-radius to make the corners sharp */
 }
 
 .footer a {
-    color: #f7070f;
+    color: #f52a2a; /* Set footer link color to #f52a2a */
     text-decoration: none;
 }
 
 .footer a:hover {
     text-decoration: underline;
 }
+
+/* Links default color for header */
+.header a,
+.header a:visited {
+    color: #808080; /* Links default color to grey */
+}
+
+/* Make all links except header links red */
+.main-section a,
+.about-section a,
+.competitions-section a,
+.footer a {
+    color: #f52a2a; /* Red color for links */
+    text-decoration: none;
+}
+
+.main-section a:hover,
+.about-section a:hover,
+.competitions-section a:hover,
+.footer a:hover {
+    text-decoration: underline; /* Keep red underline on hover */
+}
+
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Speedcubing New Zealand</h1>
+        <strong><h1>Speedcubing New Zealand</h1></strong>
         <div>
-            <a href="https://www.google.com">About</a>
-            <a href="https://www.google.com">Competitions</a>
-            <a href="https://www.google.com">Contact us</a>
+            <strong><a href="https://www.google.com">About</a></strong>
+            <strong><a href="https://www.google.com">Competitions</a></strong>
+            <strong><a href="https://www.google.com">Contact us</a></strong>
         </div>
     </header>
     <section class="about-section">
         <h2>About Us</h2>
-        <p>Speedcubing New Zealand is a WCA-accredited Regional Organization with the purpose of promoting and supporting speedcubing in New Zealand.</p>
+        <p>Speedcubing New Zealand (SNZ) is a WCA-accredited <a href="https://www.worldcubeassociation.org/organizations">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
+    </section>
+    <section class="competitions-section">
+        <h2>Competitions</h2>
+        <p>Competitions are organised by members of the local community, funded by SNZ and recognised by the <a href="https://www.worldcubeassociation.org">World Cube Association (WCA)</a>.</p>
+        <p>View all our upcoming competitions here</p>
     </section>
     <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main">GitHub</a>. Made with ❤️ by Oscar Welton-Rosie
