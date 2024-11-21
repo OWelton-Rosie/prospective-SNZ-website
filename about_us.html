@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us | Speedcubing New Zealand</title>
+    <title>Speedcubing New Zealand</title>
     <style>
 body {
     margin: 0;
@@ -18,6 +18,11 @@ body {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
+}
+
+body.homepage .header h1 a {
+    color: white; 
+    text-decoration: none; 
 }
 
 .header h1 a {
@@ -49,7 +54,7 @@ body {
 
 .header a.active {
     color: white; 
-    text-decoration: underline; 
+    text-decoration: underline; /* Underline the active link */
 }
 
 .main-section {
@@ -126,38 +131,42 @@ body {
     text-decoration: underline;
 }
 
-.past-section li a {
+.contact-section a {
     color: #f52a2a; 
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-.past-section li a:visited {
-    color: #f52a2a; 
-}
-
-.past-section li a:hover {
+.contact-section a:hover {
     text-decoration: underline; 
 }
-    </style>
+    </style> 
 </head>
-<body>
+<body class="homepage">
     <header class="header">
         <b><h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1></b>
          <div>
-            <strong><a href="about_us.html" class="active">About us</a></strong>
+            <strong><a href="about_us.html">About us</a></strong>
             <strong><a href="competitions.html">Competitions</a></strong>
             <strong><a href="contact_us.html">Contact us</a></strong>
         </div>
     </header>
     <section class="about-section">
-     <h2>About Speedcubing New Zealand</h2>
-    <p>Speedcubing New Zealand (SNZ) is a WCA-accredited <a href="https://www.worldcubeassociation.org/organizations">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
-        </section>
-      <section class="about-section">
-      <h2>What we do</h2>
-       <p>As New Zealand's WCA-accredited Regional Organization, our main duties include funding competitions in New Zealand and promoting speedcubing through social media.</p>   
-     </section>   
-     <footer class="footer">
+        <h2><a href="about_us.html">About Us</a></h2>
+        <p>Speedcubing New Zealand (SNZ) is a WCA-accredited <a href="https://www.worldcubeassociation.org/organizations">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
+    </section>
+    
+    <section class="competitions-section">
+        <h2><a href="competitions.html">Competitions</a></h2>
+        <p>Competitions are organised by members of the local community, funded by SNZ and recognised by the <a href="https://www.worldcubeassociation.org" target="_blank">World Cube Association (WCA)</a>.</p>
+        <p>View all of New Zealand's competitions <a href="competitions.html">here!</a></p>
+    </section>
+    
+    <section class="contact-section">
+        <h2><a href="contact_us.html">Contact us</a></h2>
+        <p>SNZ Welcomes inquiries! You can find our contact information (including our social media profiles) <a href="contact_us.html">here.</a></p> 
+    </section>   
+    
+    <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
     </footer>
 </body>
