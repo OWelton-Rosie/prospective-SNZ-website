@@ -1,135 +1,121 @@
     <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
-.header {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: left;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.header h1 a {
-    color: white; 
-    text-decoration: none; 
-}
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
 
-.header h1 a:hover {
-    color: white; 
-    text-decoration: none; 
-}
+        .header h1 a {
+            color: white; 
+            text-decoration: none; 
+        }
 
-.header a {
-    color: #808080; 
-    text-decoration: none;
-    margin-left: 20px; 
-}
+        .header a {
+            color: #808080; 
+            text-decoration: none;
+            margin-left: 20px; 
+        }
 
-.header a:visited {
-    color: #808080; 
-}
+        .header a.active,
+        .header a:hover {
+            color: white;
+            text-decoration: underline; 
+        }
 
-.header a:active,
-.header a:focus,
-.header a:hover {
-    color: white !important; 
-    text-decoration: none; 
-}
+        /* Sections */
+        .main-section,
+        .about-section {
+            background-color: #f5f5f5;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.header a.active {
-    color: white; 
-    text-decoration: underline; 
-}
+        .about-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-.main-section {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    font-size: 16px;
-    text-align: left;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        .about-section ul li {
+            margin-bottom: 10px;
+        }
 
-.about-section,
-.competitions-section, 
-.contact-section, 
-.upcoming-section, 
-.past-section {
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
-    font-size: 16px;
-    text-align: left;
-    border-top: 1px solid #ddd;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        /* Filter Buttons */
+        .filter-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-.footer {
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-top: 1px solid transparent; 
-    text-align: left;
-    margin-top: 40px;
-}
+        .filter-buttons .btn {
+            border: none;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
 
-.footer a {
-    color: #f52a2a; 
-    text-decoration: none;
-}
+        .filter-buttons .btn.active,
+        .filter-buttons .btn:hover {
+            background-color: #666;
+            color: white;
+        }
 
-.footer a:hover {
-    text-decoration: underline;
-}
+        /* Filter Items */
+        .container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
 
-.main-section a,
-.about-section a,
-.competitions-section a,
-.footer a {
-    color: #f52a2a; 
-    text-decoration: none;
-}
+        .filterDiv {
+            display: none;
+            background-color: #2196F3;
+            color: white;
+            width: 150px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-.main-section a:hover,
-.about-section a:hover,
-.competitions-section a:hover,
-.footer a:hover {
-    text-decoration: underline; 
-}
+        .show {
+            display: block;
+        }
 
-.about-section h2 a,
-.competitions-section h2 a,
-.contact-section h2 a {
-    color: black;
-    text-decoration: none;
-}
+        /* Footer */
+        .footer {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: left;
+        }
 
-.about-section h2 a:hover,
-.competitions-section h2 a:hover,
-.contact-section h2 a:hover {
-    text-decoration: underline;
-}
+        .footer a {
+            color: #f52a2a; 
+            text-decoration: none;
+        }
 
-.past-section li a {
-    color: #f52a2a; 
-    text-decoration: none; 
-}
+        .footer a:hover {
+            text-decoration: underline;
+        }
 
-.past-section li a:visited {
-    color: #f52a2a; 
-}
-
-.past-section li a:hover {
-    text-decoration: underline; 
-}
+        @media (max-width: 600px) {
+            .filterDiv {
+                width: 100%;
+            }
+        }
     </style>
