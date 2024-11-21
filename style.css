@@ -1,121 +1,139 @@
-    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
 
-        .header {
-            background-color: black;
-            color: white;
-            padding: 20px;
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-        }
+.header h1 a {
+    color: white; 
+    text-decoration: none; 
+}
 
-        .header h1 a {
-            color: white; 
-            text-decoration: none; 
-        }
+.header a {
+    color: #808080; 
+    text-decoration: none;
+    margin-left: 20px; 
+}
 
-        .header a {
-            color: #808080; 
-            text-decoration: none;
-            margin-left: 20px; 
-        }
+.header a.active,
+.header a:hover {
+    color: white;
+    text-decoration: underline; 
+}
 
-        .header a.active,
-        .header a:hover {
-            color: white;
-            text-decoration: underline; 
-        }
+/* General link styling */
+a {
+    color: #f52a2a; /* Set links to red */
+    text-decoration: none; /* Optional: Remove underline */
+}
 
-        /* Sections */
-        .main-section,
-        .about-section {
-            background-color: #f5f5f5;
-            color: black;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
 
-        .about-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
+/* Exclude header links */
+.header a {
+    color: #808080; /* Keep the header links as they are */
+    text-decoration: none; /* Keep the header link style */
+}
 
-        .about-section ul li {
-            margin-bottom: 10px;
-        }
+.header a.active,
+.header a:hover {
+    color: white; /* Style for active or hovered header links */
+    text-decoration: underline;
+}
 
-        /* Filter Buttons */
-        .filter-buttons {
-            margin-top: 20px;
-            text-align: center;
-        }
+.main-section,
+.about-section {
+    background-color: #f5f5f5;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-        .filter-buttons .btn {
-            border: none;
-            padding: 10px 20px;
-            background-color: #f1f1f1;
-            cursor: pointer;
-            margin: 5px;
-            border-radius: 5px;
-        }
+.about-section ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        .filter-buttons .btn.active,
-        .filter-buttons .btn:hover {
-            background-color: #666;
-            color: white;
-        }
+.about-section ul li {
+    margin-bottom: 10px;
+}
 
-        /* Filter Items */
-        .container {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
+/* Filter Buttons */
+.filter-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
 
-        .filterDiv {
-            display: none;
-            background-color: #2196F3;
-            color: white;
-            width: 150px;
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px;
-        }
+.filter-buttons .btn {
+    border: none;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
 
-        .show {
-            display: block;
-        }
+.filter-buttons .btn.active,
+.filter-buttons .btn:hover {
+    background-color: #666;
+    color: white;
+}
 
-        /* Footer */
-        .footer {
-            background-color: grey;
-            color: white;
-            padding: 10px 20px;
-            font-size: 14px;
-            text-align: left;
-        }
+/* Filter Items */
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
 
-        .footer a {
-            color: #f52a2a; 
-            text-decoration: none;
-        }
+.filterDiv {
+    display: none;
+    background-color: #2196F3;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-        .footer a:hover {
-            text-decoration: underline;
-        }
+.show {
+    display: block;
+}
 
-        @media (max-width: 600px) {
-            .filterDiv {
-                width: 100%;
-            }
-        }
-    </style>
+/* Footer */
+.footer {
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer a {
+    color: #f52a2a; 
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .filterDiv {
+        width: 100%;
+    }
+}
