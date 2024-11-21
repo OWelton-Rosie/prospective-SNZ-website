@@ -5,214 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us | Speedcubing New Zealand</title>
     <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.header {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: left;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
+        /* Header */
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
 
-.header h1 a {
-    color: white; 
-    text-decoration: none; 
-}
+        .header h1 a {
+            color: white; 
+            text-decoration: none; 
+        }
 
-.header h1 a:hover {
-    color: white; 
-    text-decoration: none; 
-}
+        .header a {
+            color: #808080; 
+            text-decoration: none;
+            margin-left: 20px; 
+        }
 
-.header a {
-    color: #808080; 
-    text-decoration: none;
-    margin-left: 20px; 
-}
+        .header a.active,
+        .header a:hover {
+            color: white;
+            text-decoration: underline; 
+        }
 
-.header a:visited {
-    color: #808080; 
-}
+        /* Sections */
+        .main-section,
+        .about-section {
+            background-color: #f5f5f5;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.header a:active,
-.header a:focus,
-.header a:hover {
-    color: white !important; 
-    text-decoration: none; 
-}
+        .about-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-.header a.active {
-    color: white; 
-    text-decoration: underline; 
-}
+        .about-section ul li {
+            margin-bottom: 10px;
+        }
 
-.main-section {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    font-size: 16px;
-    text-align: left;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        /* Filter Buttons */
+        .filter-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-.about-section,
-.competitions-section, 
-.contact-section, 
-.upcoming-section, 
-.past-section {
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
-    font-size: 16px;
-    text-align: left;
-    border-top: 1px solid #ddd;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        .filter-buttons .btn {
+            border: none;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
 
-.footer {
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-top: 1px solid transparent; 
-    text-align: left;
-    margin-top: 40px;
-}
+        .filter-buttons .btn.active,
+        .filter-buttons .btn:hover {
+            background-color: #666;
+            color: white;
+        }
 
-.footer a {
-    color: #f52a2a; 
-    text-decoration: none;
-}
+        /* Filter Items */
+        .container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
 
-.footer a:hover {
-    text-decoration: underline;
-}
-
-.main-section a,
-.about-section a,
-.competitions-section a,
-.footer a {
-    color: #f52a2a; 
-    text-decoration: none;
-}
-
-.main-section a:hover,
-.about-section a:hover,
-.competitions-section a:hover,
-.footer a:hover {
-    text-decoration: underline; 
-}
-
-.about-section h2 a,
-.competitions-section h2 a,
-.contact-section h2 a {
-    color: black;
-    text-decoration: none;
-}
-
-.about-section h2 a:hover,
-.competitions-section h2 a:hover,
-.contact-section h2 a:hover {
-    text-decoration: underline;
-}
-
-.past-section li a {
-    color: #f52a2a; 
-    text-decoration: none; 
-}
-
-.past-section li a:visited {
-    color: #f52a2a; 
-}
-
-.past-section li a:hover {
-    text-decoration: underline; 
-}
         .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
+            display: none;
+            background-color: #2196F3;
+            color: white;
+            width: 150px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-.show {
-  display: block;
-}
+        .show {
+            display: block;
+        }
 
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
+        /* Footer */
+        .footer {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: left;
+        }
 
-.btn {
-  border: none;
-  outline: none;
-  padding: 20px 20px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
+        .footer a {
+            color: #f52a2a; 
+            text-decoration: none;
+        }
 
-.btn:hover {
-  background-color: #ddd;
-}
+        .footer a:hover {
+            text-decoration: underline;
+        }
 
-.btn.active {
-  background-color: #666;
-  color: white;
-}
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .filterDiv {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <b><h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1></b>
-         <div>
-            <strong><a href="about_us.html" class="active">About us</a></strong>
-            <strong><a href="competitions.html">Competitions</a></strong>
-            <strong><a href="contact_us.html">Contact us</a></strong>
-        </div>
+        <h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1>
+        <nav>
+            <a href="about_us.html" class="active">About us</a>
+            <a href="competitions.html">Competitions</a>
+            <a href="contact_us.html">Contact us</a>
+        </nav>
     </header>
+
     <section class="about-section">
-     <h2>About Speedcubing New Zealand</h2>
-    <p>Speedcubing New Zealand (SNZ) is a WCA-accredited <a href="https://www.worldcubeassociation.org/organizations" target="_blank">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
-        </section>
-      <section class="about-section">
-      <h2>What we do</h2>
-       <p>As New Zealand's WCA-accredited Regional Organization, our main duties include funding competitions in New Zealand and promoting speedcubing through social media.</p>   
-     </section>
+        <h2>About Speedcubing New Zealand</h2>
+        <p>Speedcubing New Zealand (SNZ) is a WCA-accredited <a href="https://www.worldcubeassociation.org/organizations" target="_blank">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
+    </section>
+
     <section class="about-section">
-        <h2>FAQs</h2>
-</section>
-     <section class="about-section">
-<h2>Our staff</h2>
-<p>SNZ has many staff, who are categorised into three different groups:</p>   
-         <li><strong>Delegates.</strong> Our Delegates are WCA-recongnised trusted individuals who contribute to the overall running and logistics of WCA competitions in New Zealand.</li>
-         <li><strong>Governance.</strong> Our governance team is responsible for making both day-to-day and major decisions that run SNZ.</li>
-         <li><strong>Promotional Team.</strong> The SNZ Promotional Team is responsible for managing SNZ's social media presence.</li>
-<h4>Filter by role</h4>
+        <h2>Our staff</h2>
+        <h4>Filter by role</h4>
+        <div class="filter-buttons" id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('Governance')">Governance</button>
+            <button class="btn" onclick="filterSelection('Delegates')">Delegates</button>
+            <button class="btn" onclick="filterSelection('PromotionalTeam')">Promotional Team</button>
+        </div>
 
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('Governance')"> Governance</button>
-  <button class="btn" onclick="filterSelection('Delegates')"> Delegates</button>
-  <button class="btn" onclick="filterSelection('Promotional Team')"> Promotional team</button>
-</div>
-
-<div class="container">
-
+        <div class="container">
   <div class="filterDiv Delegates">Alex Asbery</div>
   <div class="filterDiv Promotional Team">Adrien Auvray Matyn</div>  
   <div class="filterDiv Delegates">Caleb Hall</div>
@@ -227,55 +168,31 @@ body {
   <div class="filterDiv Delegates">Liam Wadek</div>
   <div class="filterDiv Delegates">Luke Heath-Edwards</div>
   <div class="filterDiv Governance">Richard Foster</div>
-  <div class="filterDiv Governance">Wee Yeong-Eyou</div>  
-</div>
+  <div class="filterDiv Governance">Wee Yeong-Eyou</div> 
+        </div>
+    </section>
 
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-</section>
-     <footer class="footer">
+    <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
     </footer>
+
+    <script>
+        function filterSelection(category) {
+            const items = document.querySelectorAll('.filterDiv');
+            items.forEach(item => {
+                item.style.display = 'none';
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                }
+            });
+
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // Initialize to show all
+        filterSelection('all');
+    </script>
 </body>
 </html>
