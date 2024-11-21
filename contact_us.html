@@ -36,25 +36,12 @@
             text-decoration: underline; 
         }
 
-        /* General link styling for all other links */
         body a {
-            color: #f52a2a; /* Set to red */
+            color: #f52a2a; 
             text-decoration: none;
         }
 
         body a:hover {
-            text-decoration: underline;
-        }
-
-        /* Exclude header links */
-        .header a {
-            color: #808080; /* Keep the header links gray */
-            text-decoration: none;
-        }
-
-        .header a.active,
-        .header a:hover {
-            color: white; /* Active or hovered header links remain white */
             text-decoration: underline;
         }
 
@@ -65,21 +52,20 @@
             margin: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
         }
 
         .contact-form {
             max-width: 600px;
-            padding-left: 20px; /* Left padding */
-            padding-right: 20px; /* Right padding */
-            padding-top: 10px;
+            flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Space between elements */
+            gap: 15px;
         }
 
         .contact-form label {
             font-weight: bold;
-            margin-bottom: 5px; /* Spacing between label and input */
         }
 
         .contact-form input,
@@ -89,16 +75,10 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 14px;
         }
 
-        .contact-form textarea {
-            resize: vertical; /* Allow vertical resizing only */
-        }
-
-        /* Button styling */
         .contact-form button {
-            background-color: #f52a2a; /* Red button */
+            background-color: #f52a2a;
             color: white;
             border: none;
             cursor: pointer;
@@ -106,7 +86,35 @@
         }
 
         .contact-form button:hover {
-            background-color: #d42b2b; /* Slightly darker red on hover */
+            background-color: #d42b2b;
+        }
+
+        .social-media {
+            flex: 0.5;
+            padding: 20px 20px 20px 40px; /* Adjusted left padding */
+            border-left: 1px solid #ccc;
+        }
+
+        .social-media h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
         }
 
         .footer {
@@ -118,7 +126,7 @@
         }
 
         .footer a {
-            color: #f52a2a; /* Footer links are also red */
+            color: #f52a2a;
             text-decoration: none;
         }
 
@@ -127,25 +135,27 @@
         }
 
         @media (max-width: 600px) {
-            .contact-form input,
-            .contact-form textarea,
-            .contact-form button {
-                font-size: 16px; /* Larger font size for small screens */
+            .main-section {
+                flex-direction: column;
+            }
+
+            .social-media {
+                border-left: none;
+                border-top: 1px solid #ccc;
             }
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <b><h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1></b>
+        <h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1>
         <div>
-            <strong><a href="about_us.html">About us</a></strong>
-            <strong><a href="competitions.html">Competitions</a></strong>
-            <strong><a href="contact_us.html" class="active">Contact us</a></strong>
+            <a href="about_us.html">About us</a>
+            <a href="competitions.html">Competitions</a>
+            <a href="contact_us.html" class="active">Contact us</a>
         </div>
     </header>
     <main class="main-section">
-        <h2>Contact Us</h2>
         <form class="contact-form" action="submit_form.html" method="POST">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -158,6 +168,21 @@
             
             <button type="submit">Submit</button>
         </form>
+        <div class="social-media">
+            <h3>Follow Us!</h3>
+            <a href="https://instagram.com/speedcubingnz" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png" alt="Instagram">
+            </a>
+            <a href="https://facebook.com/speedcubingnz" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png" alt="Facebook">
+            </a>
+            <a href="https://youtube.com/speedcubingnz" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="YouTube">
+            </a>
+            <a href="https://twitter.com/speedcubingnz" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter">
+            </a>
+        </div>
     </main>
     <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
