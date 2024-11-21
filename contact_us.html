@@ -5,118 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us | Speedcubing New Zealand</title>
     <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
-.header {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: left;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.header h1 a {
-    color: white; 
-    text-decoration: none; 
-}
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
 
-.header h1 a:hover {
-    color: white; 
-    text-decoration: none; 
-}
+        .header h1 a {
+            color: white; 
+            text-decoration: none; 
+        }
 
-.header a {
-    color: #808080; 
-    text-decoration: none;
-    margin-left: 20px; 
-}
+        .header a {
+            color: #808080; 
+            text-decoration: none;
+            margin-left: 20px; 
+        }
 
-.header a:visited {
-    color: #808080; 
-}
+        .header a.active,
+        .header a:hover {
+            color: white;
+            text-decoration: underline; 
+        }
 
-.header a:active,
-.header a:focus,
-.header a:hover {
-    color: white !important; 
-    text-decoration: none; 
-}
+        /* Sections */
+        .main-section,
+        .about-section {
+            background-color: #f5f5f5;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.header a.active {
-    color: white; 
-    text-decoration: underline; 
-}
+        .about-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-.main-section {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    font-size: 16px;
-    text-align: left;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        .about-section ul li {
+            margin-bottom: 10px;
+        }
 
-.contact-form {
-    max-width: 600px;
-    padding-left: 20px; 
-}
+        /* Filter Buttons */
+        .filter-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
+        .filter-buttons .btn {
+            border: none;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
 
-.contact-form input,
-.contact-form textarea {
-    width: 95%; 
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-}
+        .filter-buttons .btn.active,
+        .filter-buttons .btn:hover {
+            background-color: #666;
+            color: white;
+        }
 
-.contact-form button {
-    background-color: #f52a2a;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+        /* Filter Items */
+        .container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
 
-.contact-form button:hover {
-    background-color: #d22222;
-}
+        .filterDiv {
+            display: none;
+            background-color: #2196F3;
+            color: white;
+            width: 150px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-.footer {
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-top: 1px solid transparent; 
-    text-align: left;
-    margin-top: 40px;
-}
+        .show {
+            display: block;
+        }
 
-.footer a {
-    color: #f52a2a; 
-    text-decoration: none;
-}
+        /* Footer */
+        .footer {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: left;
+        }
 
-.footer a:hover {
-    text-decoration: underline;
-}
+        .footer a {
+            color: #f52a2a; 
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .filterDiv {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
