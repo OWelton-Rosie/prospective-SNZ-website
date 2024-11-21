@@ -63,20 +63,40 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.about-section,
-.competitions-section, 
-.contact-section, 
-.upcoming-section, 
-.past-section {
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background-color: #f52a2a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
     font-size: 16px;
-    text-align: left;
-    border-top: 1px solid #ddd;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #d22222;
 }
 
 .footer {
@@ -97,35 +117,7 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
-
-.main-section a,
-.about-section a,
-.competitions-section a,
-.footer a {
-    color: #f52a2a; 
-    text-decoration: none;
-}
-
-.main-section a:hover,
-.about-section a:hover,
-.competitions-section a:hover,
-.footer a:hover {
-    text-decoration: underline; 
-}
-
-.about-section h2 a,
-.competitions-section h2 a,
-.contact-section h2 a {
-    color: black;
-    text-decoration: none;
-}
-
-.about-section h2 a:hover,
-.competitions-section h2 a:hover,
-.contact-section h2 a:hover {
-    text-decoration: underline;
-}
-    </style> 
+    </style>
 </head>
 <body>
     <header class="header">
@@ -133,11 +125,25 @@ body {
         <div>
             <strong><a href="about_us.html">About us</a></strong>
             <strong><a href="competitions.html">Competitions</a></strong>
-            <strong><a href="contact_us.html" class="active" >Contact us </a></strong>
+            <strong><a href="contact_us.html" class="active">Contact us</a></strong>
         </div>
     </header>
-    <p>This is the "Contact us" page.</p>
-     <footer class="footer">
+    <main class="main-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="submit_form.html" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
     </footer>
 </body>
