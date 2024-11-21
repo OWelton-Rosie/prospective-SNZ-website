@@ -3,176 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competitions | Speedcubing New Zealand</title>
+    <title>Speedcubing New Zealand</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.header {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
 
-.header h1 a {
-    color: white; 
-    text-decoration: none; 
-}
+        .header h1 a {
+            color: white; 
+            text-decoration: none; 
+        }
 
-.header a {
-    color: #808080; 
-    text-decoration: none;
-    margin-left: 20px; 
-}
+        .header a {
+            color: #808080; 
+            text-decoration: none;
+            margin-left: 20px; 
+        }
 
-.header a.active,
-.header a:hover {
-    color: white;
-    text-decoration: underline; 
-}
+        .header a.active,
+        .header a:hover {
+            color: white;
+            text-decoration: underline; 
+        }
 
-/* General link styling for all other links */
-body a {
-    color: #f52a2a; /* Set to red */
-    text-decoration: none;
-}
+        /* General link styling for all other links */
+        body a {
+            color: #f52a2a; /* Set to red */
+            text-decoration: none;
+        }
 
-body a:hover {
-    text-decoration: underline;
-}
+        body a:hover {
+            text-decoration: underline;
+        }
 
-/* Exclude header links */
-.header a {
-    color: #808080; /* Keep the header links gray */
-    text-decoration: none;
-}
+        /* Exclude header links */
+        .header a {
+            color: #808080; /* Keep the header links gray */
+            text-decoration: none;
+        }
 
-.header a.active,
-.header a:hover {
-    color: white; /* Active or hovered header links remain white */
-    text-decoration: underline;
-}
+        .header a.active,
+        .header a:hover {
+            color: white; /* Active or hovered header links remain white */
+            text-decoration: underline;
+        }
 
-.main-section,
-.about-section {
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        .main-section,
+        .about-section {
+            background-color: #f5f5f5;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.about-section ul {
-    list-style-type: none;
-    padding: 0;
-}
+        .about-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-.about-section ul li {
-    margin-bottom: 10px;
-}
+        .about-section ul li {
+            margin-bottom: 10px;
+        }
 
-/* Filter Buttons */
-.filter-buttons {
-    margin-top: 20px;
-    text-align: center;
-}
+        /* Section links (black) */
+        .about-section h2 a {
+            color: black; /* Set section links to black */
+            text-decoration: none;
+        }
 
-.filter-buttons .btn {
-    border: none;
-    padding: 10px 20px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    margin: 5px;
-    border-radius: 5px;
-}
+        .about-section h2 a:hover {
+            text-decoration: underline;
+        }
 
-.filter-buttons .btn.active,
-.filter-buttons .btn:hover {
-    background-color: #666;
-    color: white;
-}
+        /* Filter Buttons */
+        .filter-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-/* Filter Items */
-.container {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
+        .filter-buttons .btn {
+            border: none;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
 
-.filterDiv {
-    display: none;
-    background-color: #2196F3;
-    color: white;
-    width: 150px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-}
+        .filter-buttons .btn.active,
+        .filter-buttons .btn:hover {
+            background-color: #666;
+            color: white;
+        }
 
-.show {
-    display: block;
-}
+        /* Filter Items */
+        .container {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
 
-/* Footer */
-.footer {
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    text-align: left;
-}
+        .filterDiv {
+            display: none;
+            background-color: #2196F3;
+            color: white;
+            width: 150px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-.footer a {
-    color: #f52a2a; /* Footer links are also red */
-    text-decoration: none;
-}
+        .show {
+            display: block;
+        }
 
-.footer a:hover {
-    text-decoration: underline;
-}
+        /* Footer */
+        .footer {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: left;
+        }
 
-@media (max-width: 600px) {
-    .filterDiv {
-        width: 100%;
-    }
-}
-</style>
+        .footer a {
+            color: #f52a2a; /* Footer links are also red */
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .filterDiv {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-<body>
-   <header class="header">
+<body class="homepage">
+    <header class="header">
         <b><h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1></b>
          <div>
             <strong><a href="about_us.html">About us</a></strong>
-            <strong><a href="competitions.html" class="active">Competitions</a></strong>
+            <strong><a href="competitions.html">Competitions</a></strong>
             <strong><a href="contact_us.html">Contact us</a></strong>
         </div>
     </header>
-<section class="about-section">
-  <h2>Upcoming competitions</h2>
-  <ul>
-    <li><a href="https://www.worldcubeassociation.org/competitions/HastyHastings2024" target="_blank">Hasty Hastings 2024</a></li>
-    <li><a href="https://www.worldcubeassociation.org/competitions/KeepChristchurchQualified2024" target="_blank">Max Speed Milford 2024</a></li>
-    <li><a href="https://www.worldcubeassociation.org/competitions/NewZealandNationals2024" target="_blank">New Zealand Nationals 2024</a></li>
-  </ul>
-</section>
-<section class="about-section">
-    <h2>Past competitions</h2>
-        <ul>
-            <li><a href="https://www.worldcubeassociation.org/competitions/KeepChristchurchQualified2024" target="_blank">Keep Christchurch Qualified 2024</a></li>
-            <li><a href="https://www.worldcubeassociation.org/competitions/GroundhogDayinSomerfield2024" target="_blank">Groundhog Day in Somerfield 2024</a></li>
-        </ul>
-</section>
+    <section class="about-section">
+        <h2><a href="about_us.html">About Us</a></h2>
+        <p>Speedcubing New Zealand (SNZ) is a WCA-accredited <a href="https://www.worldcubeassociation.org/organizations" target="_blank">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
+    </section>
     
-<footer class="footer">
-    <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
-</footer>
+    <section class="about-section">
+        <h2><a href="competitions.html">Competitions</a></h2>
+        <p>Competitions are organised by members of the local community, funded by SNZ and recognised by the <a href="https://www.worldcubeassociation.org" target="_blank">World Cube Association (WCA)</a>.</p>
+        <p>View all of New Zealand's competitions <a href="competitions.html">here</a>!</p>
+    </section>
+    
+    <section class="about-section">
+        <h2><a href="contact_us.html">Contact us</a></h2>
+        <p>SNZ Welcomes inquiries! You can find our contact information (including our social media profiles) <a href="contact_us.html">here.</a></p> 
+    </section>   
+    
+    <footer class="footer">
+        <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
+    </footer>
 </body>
 </html>
