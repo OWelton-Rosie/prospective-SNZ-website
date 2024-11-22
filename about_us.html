@@ -3,225 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us | Speedcubing New Zealand</title>
+    <title>Contact us | Speedcubing New Zealand</title>
     <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.header {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
 
-.header h1 a {
-    color: white; 
-    text-decoration: none; 
-}
+        .header h1 a {
+            color: white; 
+            text-decoration: none; 
+        }
 
-.header a {
-    color: #808080; 
-    text-decoration: none;
-    margin-left: 20px; 
-}
+        .header a {
+            color: #808080; 
+            text-decoration: none;
+            margin-left: 20px; 
+        }
 
-.header a.active,
-.header a:hover {
-    color: white;
-    text-decoration: underline; 
-}
+        .header a.active,
+        .header a:hover {
+            color: white;
+            text-decoration: underline; 
+        }
 
-/* General link styling for all other links */
-body a {
-    color: #f52a2a; /* Set to red */
-    text-decoration: none;
-}
+        body a {
+            color: #f52a2a; 
+            text-decoration: none;
+        }
 
-body a:hover {
-    text-decoration: underline;
-}
+        body a:hover {
+            text-decoration: underline;
+        }
 
-/* Exclude header links */
-.header a {
-    color: #808080; /* Keep the header links gray */
-    text-decoration: none;
-}
+        .main-section {
+            background-color: #f5f5f5;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+        }
 
-.header a.active,
-.header a:hover {
-    color: white; /* Active or hovered header links remain white */
-    text-decoration: underline;
-}
+        .contact-form {
+            max-width: 600px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-.main-section,
-.about-section {
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        .contact-form label {
+            font-weight: bold;
+        }
 
-.about-section ul {
-    list-style-type: none;
-    padding: 0;
-}
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-.about-section ul li {
-    margin-bottom: 10px;
-}
+        .contact-form button {
+            background-color: #f52a2a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
 
-/* Filter Buttons */
-.filter-buttons {
-    margin-top: 20px;
-    text-align: center;
-}
+        .contact-form button:hover {
+            background-color: #d42b2b;
+        }
 
-.filter-buttons .btn {
-    border: none;
-    padding: 10px 20px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    margin: 5px;
-    border-radius: 5px;
-}
+        .social-media {
+            flex: 0.5;
+            padding: 20px 20px 20px 40px; /* Adjusted left padding */
+            border-left: 1px solid #ccc;
+        }
 
-.filter-buttons .btn.active,
-.filter-buttons .btn:hover {
-    background-color: #666;
-    color: white;
-}
+        .social-media h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
 
-.container {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    gap: 10px; /* Add spacing between containers */
-    align-items: flex-start; /* Align containers to the left */
-}
+        .social-media a {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
 
-.filterDiv {
-    display: block;
-    background-color: #2196F3;
-    color: white;
-    width: 100%; /* Adjust width to fill the parent container */
-    text-align: left; /* Align text to the left */
-    padding: 10px;
-    border-radius: 5px;
-}
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
 
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
 
+        .footer {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: left;
+        }
 
-.show {
-    display: block;
-}
+        .footer a {
+            color: #f52a2a;
+            text-decoration: none;
+        }
 
-/* Footer */
-.footer {
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    text-align: left;
-}
+        .footer a:hover {
+            text-decoration: underline;
+        }
 
-.footer a {
-    color: #f52a2a; /* Footer links are also red */
-    text-decoration: none;
-}
+        @media (max-width: 600px) {
+            .main-section {
+                flex-direction: column;
+            }
 
-.footer a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-    .filterDiv {
-        width: 100%;
-    }
-}
-</style>
+            .social-media {
+                border-left: none;
+                border-top: 1px solid #ccc;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1>
-        <nav>
-            <a href="about_us.html" class="active">About us</a>
+        <div>
+            <a href="about_us.html">About us</a>
             <a href="competitions.html">Competitions</a>
-            <a href="contact_us.html">Contact us</a>
-        </nav>
+            <a href="contact_us.html" class="active">Contact us</a>
+        </div>
     </header>
 
-   <section class="about-section">
-    <h2>About Speedcubing New Zealand</h2>
-    <p>Speedcubing New Zealand (SNZ) is a WCA-recognised <a href="https://www.worldcubeassociation.org/organizations" target="_blank" class="red-link">Regional Organization</a> with the purpose of promoting and supporting speedcubing in New Zealand.</p>
-</section>
-
-
-    <section class="about-section">
-        <h2>Our staff</h2>
-        <p>SNZ has numerous staff who fill three categories:</p>
-        <li><strong>Governance.</strong>SNZ is governed by a select group of individuals, who make decisions responsible for SNZ's future.</li>
-        <li><strong>Delegates.</strong> Our Delegate team are appointed individuals who are trusted with key organisational duties before, during and after competitions.</li>
-        <li><strong>SNZ Promotional Team.</strong>The SNZ Promotional Team is responsible for managing SNZ's social media presence.</li>
-<br>
-        <h4>Filter by role</h4>
-        <div class="filter-buttons" id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')">Show all</button>
-            <button class="btn" onclick="filterSelection('Governance')">Governance</button>
-            <button class="btn" onclick="filterSelection('Delegates')">Delegates</button>
-            <button class="btn" onclick="filterSelection('PromotionalTeam')">SNZ Promotional Team</button>
+    <main class="main-section">
+        <form class="contact-form" action="submit_form.html" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div class="social-media">
+            <h3>Follow our socials!</h3>
+            <a href="https://instagram.com/speedcubingnz" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png" alt="Instagram">
+            </a>
+            <a href="https://facebook.com/speedcubingnz" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png" alt="Facebook">
+            </a>
+            <a href="https://youtube.com/speedcubingnz" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="YouTube">
+            </a>
+            <a href="https://twitter.com/speedcubingnz" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter">
+            </a>
         </div>
-
-        <div class="container">
-  <div class="filterDiv Delegates">Alex Asbery - Regional Delegate | <a href="https://www.worldcubeassociation.org/persons/2013ASBE01" target="blank">2013ASBE01</a> | <a href="mailto:aasbery@worldcubeassociation.org" target="_blank">aasbery@worldcubeassociation.org</a></div>
-  <div class="filterDiv PromotionalTeam">Adrien Auvray Matyn - SNZ Promotional Team | <a href="https://www.worldcubeassociation.org/persons/2018MATY02" target="_blank">2018MATY02</a> </div>
-  <div class="filterDiv PromotionalTeam">Ashley Foster - SNZ Promotional Team | <a href="https://www.worldcubeassociation.org/persons/2018FOST03" target="_blank">2018FOST03</a></div>          
-  <div class="filterDiv Delegates">Caleb Hall - Junior Delegate | <a href="https://www.worldcubeassociation.org/persons/2019HALL04" target="_blank">2019HALL04</a> | <a href="mailto:chall@worldcubeassociation.org" target="_blank">chall@worldcubeassociation.org</a></div>
-  <div class="filterDiv Delegates">Daniel Fraser - Delegate | <a href="https://www.worldcubeassociation.org/persons/2020FRAS02" target="_blank">2020FRAS02</a> | <a href="mailto:dfraser@worldcubeassociation.org" target="_blank">dfraser@worldcubeassociation.org</a> </div>
-  <div class="filterDiv PromotionalTeam">Dwyane Ramos - SNZ Promotional Team | <a href="https://www.worldcubeassociation.org/persons/2019RAMO05" target="_blank">2019RAMO05</a></div>
-  <div class="filterDiv Delegates">David Lim - Delegate | <a href="https://www.worldcubeassociation.org/persons/2010LIMD01" target="_blank">2010LIMD01 | <a href="mailto:dlim@worlcubeassociation.org" target="_blank">dlim@worlcubeassociation.org</a></div>
-  <div class="filterDiv PromotionalTeam">Elyas Eyou - SNZ Promtional Team | <a href="https://www.worldcubeassociation.org/persons/2018EYOU02" target="_blank">2018EYOU02</a></div>          
-  <div class="filterDiv Delegates">Finn Trass - Trainee Delegate | <a href="https://www.worldcubeassociation.org/persons/2016TRAS01" target="_blank">2016TRAS01</a></div>
-  <div class="filterDiv Delegates Governance">Jack Maddigan - Trainee Delegate, Governance | <a href="https://www.worldcubeassociation.org/persons/2020MADD02" target="_blank">2020MADD02</a></div>
-  <div class="filterDiv Delegates">James Dyer - Trainee Delegate | <a href="https://www.worldcubeassociation.org/persons/2019DYER01" target="_blank">2019DYER01</a></div>
-  <div class="filterDiv PromotionalTeam">James Macdiarmid - SNZ Promotional Team | <a href="https://www.worldcubeassociation.org/persons/2015MACD03" target="_blank">2015MACD03</a></div>  
-  <div class="filterDiv Governance">Joshua Brungar - Governance | <a href="https://www.worldcubeassociation.org/persons/2009BRUN03" target="_blank">2009BRUN03</a></div>  
-  <div class="filterDiv Delegates">Liam Wadek - Junior Delegate | <a href="https://www.worldcubeassociation.org/persons/2017WADE01" target="_blank">2017WADE01</a> | <a href="mailto:lwadek@worlcubeassociation.org" target="_blank">lwadek@worlcubeassociation.org</a></div>
-  <div class="filterDiv Delegates">Luke Heath-Edwards - Delegate | <a href="https://www.worldcubeassociation.org/persons/2018HEAT01" target="_blank">2018HEAT01</a> | <a href="mailto:lheath@worlcubeassociation.org" target="_blank">lheath@worlcubeassociation.org</a></div>
-  <div class="filterDiv Governance">Mike Field - Governance | <a href="https://www.worldcubeassociation.org/persons/2017FIEL01" target="_blank">2017FIEL01</a></div> 
-  <div class="filterDiv Governance">Nick Vujcich - Governance</div>          
-  <div class="filterDiv Governance">Richard Foster - Governance | <a href="https://www.worldcubeassociation.org/persons/2018FOST04" target="_blank">2018FOST04</a></div>
-  <div class="filterDiv Governance">Terence Brown - Governance | <a href="https://www.worldcubeassociation.org/persons/2021BROW05" target="_blank">2021BROW05</a></div>          
-  <div class="filterDiv Governance">Wee-Yeong Eyou - Governance | <a href="https://www.worldcubeassociation.org/persons/2020EYOU01" target="_blank">2020EYOU01</a></div> 
-        </div>
-    </section>
-
+    </main>
     <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
     </footer>
-
-    <script>
-        function filterSelection(category) {
-            const items = document.querySelectorAll('.filterDiv');
-            items.forEach(item => {
-                item.style.display = 'none';
-                if (category === 'all' || item.classList.contains(category)) {
-                    item.style.display = 'block';
-                }
-            });
-
-            const buttons = document.querySelectorAll('.btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-        }
-
-        filterSelection('all');
-    </script>
 </body>
 </html>
