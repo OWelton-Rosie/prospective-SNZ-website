@@ -1,4 +1,6 @@
- Sitemap
+<h1>Assets and sitemap</h1>
+
+<h2>Sitemap</h2>
 <br>
 [Homepage](https://prospective-snz-website.pages.dev/)
 <br>
@@ -13,7 +15,7 @@
 [Form submission screen](https://prospective-snz-website.pages.dev/form_finish)
 
 
-# Assets
+<h2>Assets</h2>
 <br>
 Cloudflare pages. Tied to: oweltonrosie@gmail.com
 <br>
