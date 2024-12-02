@@ -1,6 +1,6 @@
-### Sitemap
+## Sitemap
 
-PUBLICLY VIEWABLE:
+# PUBLICLY VIEWABLE:
 <br>
 [Homepage](https://prospective-snz-website.pages.dev/)
 <br>
@@ -12,6 +12,6 @@ PUBLICLY VIEWABLE:
 <br>
 [Contact us](https://prospective-snz-website.pages.dev/contact_us)
 
-HIDDEN: 
+# HIDDEN: 
 <br>
 [Form submission screen](https://prospective-snz-website.pages.dev/form_finish)
