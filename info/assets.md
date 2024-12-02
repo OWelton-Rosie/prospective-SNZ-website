@@ -1,5 +1,4 @@
 # Sitemap
-
 <br>
 [Homepage](https://prospective-snz-website.pages.dev/)
 <br>
@@ -15,6 +14,9 @@
 
 
 # Assets
+<br>
 Cloudflare pages. Tied to: oweltonrosie@gmail.com
+<br>
 Formspree. Tied to: oweltonrosie@gmail.com
+<br>
 GitHub. Tied to: owelttonrosie@gmail.com
