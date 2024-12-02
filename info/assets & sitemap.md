@@ -21,4 +21,4 @@ Cloudflare pages. Tied to: oweltonrosie@gmail.com
 <br>
 Formspree. Tied to: oweltonrosie@gmail.com
 <br>
-GitHub. Tied to: owelttonrosie@gmail.com
+GitHub. Tied to: oweltonrosie@gmail.com
