@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your response has been recorded | Speedcubing New Zealand</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+        /* Existing styles */
+
+        /* Ensure the page takes full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
         }
-        h1 {
-            color: #f52a2a;
+
+        /* Main container takes the remaining space */
+        .content {
+            flex: 1;
         }
-        a {
+
+        .footer {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .footer a {
             color: #f52a2a;
             text-decoration: none;
         }
-        a:hover {
+
+        .footer a:hover {
             text-decoration: underline;
         }
     </style>
