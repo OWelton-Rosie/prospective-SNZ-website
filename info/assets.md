@@ -12,3 +12,9 @@
 [Contact us](https://prospective-snz-website.pages.dev/contact_us)
 <br>
 [Form submission screen](https://prospective-snz-website.pages.dev/form_finish)
+
+
+# Assets
+Cloudflare pages. Tied to: oweltonrosie@gmail.com
+Formspree. Tied to: oweltonrosie@gmail.com
+GitHub. Tied to: owelttonrosie@gmail.com
