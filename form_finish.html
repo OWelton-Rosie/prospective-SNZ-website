@@ -6,160 +6,90 @@
     <title>Your response has been recorded | Speedcubing New Zealand</title>
     <link rel="stylesheet" href="style.css">
     <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.header {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
 
-.header h1 a {
-    color: white; 
-    text-decoration: none; 
-}
+        .header h1 a {
+            color: white; 
+            text-decoration: none; 
+        }
 
-.header a {
-    color: #808080; 
-    text-decoration: none;
-    margin-left: 20px; 
-}
+        .header a {
+            color: #808080; 
+            text-decoration: none;
+            margin-left: 20px; 
+        }
 
-.header a.active,
-.header a:hover {
-    color: white;
-    text-decoration: underline; 
-}
+        .header a.active,
+        .header a:hover {
+            color: white;
+            text-decoration: underline; 
+        }
 
-/* General link styling */
-a {
-    color: #f52a2a; /* Set links to red */
-    text-decoration: none; /* Optional: Remove underline */
-}
+        a {
+            color: #f52a2a;
+            text-decoration: none;
+        }
 
-a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-}
+        a:hover {
+            text-decoration: underline;
+        }
 
-/* Exclude header links */
-.header a {
-    color: #808080; /* Keep the header links as they are */
-    text-decoration: none; /* Keep the header link style */
-}
+        .main-section {
+            background-color: #f5f5f5;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.header a.active,
-.header a:hover {
-    color: white; /* Style for active or hovered header links */
-    text-decoration: underline;
-}
+        .footer {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: left;
+        }
 
-.main-section,
-.about-section {
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        .footer a {
+            color: #f52a2a; 
+            text-decoration: none;
+        }
 
-.about-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.about-section ul li {
-    margin-bottom: 10px;
-}
-
-/* Filter Buttons */
-.filter-buttons {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.filter-buttons .btn {
-    border: none;
-    padding: 10px 20px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.filter-buttons .btn.active,
-.filter-buttons .btn:hover {
-    background-color: #666;
-    color: white;
-}
-
-/* Filter Items */
-.container {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.filterDiv {
-    display: none;
-    background-color: #2196F3;
-    color: white;
-    width: 150px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.show {
-    display: block;
-}
-
-/* Footer */
-.footer {
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    text-align: left;
-}
-
-.footer a {
-    color: #f52a2a; 
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-    .filterDiv {
-        width: 100%;
-    }
-}
-
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
-<body class="homepage">
+<body class="thank-you-page">
     <header class="header">
-        <b><h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1></b>
-         <div>
+        <h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1>
+        <div>
             <strong><a href="about_us.html">About us</a></strong>
             <strong><a href="competitions.html">Competitions</a></strong>
             <strong><a href="get_involved.html">Get involved</a></strong>
             <strong><a href="contact_us.html">Contact us</a></strong>
         </div>
-<body>
-    <h1>Thank You!</h1>
-    <p>Your message has been sent successfully. We'll get back to you soon!</p>
-    <a href="index.html">Go Back to Home</a>
+    </header>
+    <main class="main-section">
+        <h1>Thank You!</h1>
+        <p>Your message has been sent successfully. We'll get back to you soon!</p>
+        <a href="index.html">Go Back to Home</a>
+    </main>
+    <footer class="footer">
+        <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
+    </footer>
 </body>
 </html>
