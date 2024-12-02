@@ -2,17 +2,17 @@
 
 <h2>Sitemap</h2>
 <br>
-[Homepage](https://prospective-snz-website.pages.dev/)
+<a href="https://prospective-snz-website.pages.dev/" target="_blank">Homepage
 <br>
-[About us](https://prospective-snz-website.pages.dev/about_us)
+<a href="https://prospective-snz-website.pages.dev/about_us" target="_blank">About us</a>
 <br>
-[Competitions](https://prospective-snz-website.pages.dev/competitions)
+<a href="https://prospective-snz-website.pages.dev/competitions" target="_blank">Competitions</a>
 <br>
-[Get involved](https://prospective-snz-website.pages.dev/get_involved)
+<a href="https://prospective-snz-website.pages.dev/get_involved" target="_blank">Get involved
 <br>
-[Contact us](https://prospective-snz-website.pages.dev/contact_us)
+<a href="https://prospective-snz-website.pages.dev/contact_us" target="_blank">Contact us</a>
 <br>
-[Form submission screen](https://prospective-snz-website.pages.dev/form_finish)
+<a href="https://prospective-snz-website.pages.dev/form_finish" target="blank">Form submission screen</a>
 
 
 <h2>Assets</h2>
