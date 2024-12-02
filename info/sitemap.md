@@ -1,6 +1,6 @@
 Sitemap
 
-VIEWABLE:
+PUBLICLY VIEWABLE:
 <br>
 [Homepage](https://prospective-snz-website.pages.dev/)
 <br>
