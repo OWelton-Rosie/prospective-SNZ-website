@@ -1,2 +1,3 @@
-Here's a list of things I want to do witht the website.
+Here's a list of things I want to do with the website.
 
+- Make an FAQ page
