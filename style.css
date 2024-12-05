@@ -137,6 +137,13 @@ select {
     background-color: #d42b2b;
 }
 
+/* Form and Socials Container */
+.form-and-socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 /* Social Media Styling */
 .social-media {
     flex: 0.5;
@@ -234,7 +241,18 @@ select {
         flex-direction: column;
     }
 
+    .form-and-socials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
     .social-media {
+        width: 100%;
+        margin-top: 20px;
         border-left: none;
         border-top: 1px solid #ccc;
     }
