@@ -51,6 +51,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.header div strong {
+    margin-right: 15px; /* Added spacing between navigation links */
+}
+
 /* Section and Container Styling */
 .main-section,
 .about-section {
@@ -60,6 +64,19 @@ a:hover {
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-section h1 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.main-section p {
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.main-section a {
+    display: block; /* Makes links block-level elements */
+    margin-bottom: 10px; /* Space below each link */
 }
 
 /* Adjust margin-bottom for headings to increase space below */
@@ -229,6 +246,7 @@ select {
 .footer a {
     color: #f52a2a;
     text-decoration: none;
+    margin-right: 10px; /* Added spacing between footer links */
 }
 
 .footer a:hover {
