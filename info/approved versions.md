@@ -1,5 +1,5 @@
 <h1>Approved versions</h1>
-<h2>Latest approved cersion:</h2>
+<h2>Latest approved version:</h2>
 
 <h2>Past approved versions</h2>
 
