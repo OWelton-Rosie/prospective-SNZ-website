@@ -2,7 +2,7 @@
 
 
 <h2>About approved versions</h2>
-<p>Approved versions are versions of the site whose information has been ratified by SNZ staff.</p>
+<p>Approved versions are versions of the site whose information has been ratified by SNZ staff. I use the GitHub build to identify approved versions.</p>
 
 <h2>Latest approved version:</h2>
 
