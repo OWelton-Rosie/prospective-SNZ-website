@@ -79,7 +79,6 @@ a:hover {
     margin-bottom: 10px; /* Space below each link */
 }
 
-/* Adjust margin-bottom for headings to increase space below */
 .main-section h2,
 .main-section h3,
 .about-section h2,
@@ -88,7 +87,6 @@ a:hover {
     margin-top: 30px; /* Bigger gap before headings */
 }
 
-/* Adjust margin-bottom for text and list items to increase space below */
 .main-section p,
 .main-section ul,
 .main-section li,
@@ -246,11 +244,17 @@ select {
 .footer a {
     color: #f52a2a;
     text-decoration: none;
-    margin-right: 10px; /* Added spacing between footer links */
+    margin: 0; /* Ensure no extra spacing from margins */
+    padding: 0; /* Ensure no extra spacing from padding */
 }
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Specific fix for gap after links */
+.footer a + span {
+    margin-left: 0; /* Remove unintended space between link and following text */
 }
 
 /* Mobile Responsiveness */
