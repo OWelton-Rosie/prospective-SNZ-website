@@ -11,3 +11,5 @@
 <a href="https://prospective-snz-website.pages.dev/contact_us" target="_blank">Contact us</a>
 <br>
 <a href="https://prospective-snz-website.pages.dev/form_finish" target="blank">Form submission screen</a>
+<br>
+<h3>Total pages: 6</h3>
