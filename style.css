@@ -41,20 +41,16 @@ a:hover {
 }
 
 .header a {
+    display: inline-block; /* Ensure links behave uniformly */
     color: #808080; /* Gray links in header */
-    margin-left: 10px; /* Adjusted margin for uniform spacing */
+    margin: 0 10px; /* Uniform spacing between links */
+    font-weight: bold; /* Matches bold style of strong tag */
 }
 
 .header a.active,
 .header a:hover {
     color: white; /* Active or hovered header links */
     text-decoration: underline;
-    margin-left: 20px; /* Ensures no additional spacing */
-}
-
-/* Optional Debugging Rule for About Page */
-body.about-page .header a {
-    margin-left: 10px; /* Overrides unexpected spacing for links */
 }
 
 /* Section and Container Styling */
