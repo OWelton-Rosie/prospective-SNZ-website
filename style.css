@@ -42,17 +42,19 @@ a:hover {
 
 .header a {
     color: #808080; /* Gray links in header */
-    margin-left: 20px;
+    margin-left: 10px; /* Adjusted margin for uniform spacing */
 }
 
 .header a.active,
 .header a:hover {
     color: white; /* Active or hovered header links */
     text-decoration: underline;
+    margin-left: 20px; /* Ensures no additional spacing */
 }
 
-.header div strong {
-    margin-right: 15px; /* Added spacing between navigation links */
+/* Optional Debugging Rule for About Page */
+body.about-page .header a {
+    margin-left: 10px; /* Overrides unexpected spacing for links */
 }
 
 /* Section and Container Styling */
