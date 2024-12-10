@@ -5,6 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequently Asked Questions &raquo; Speedcubing New Zealand</title>
     <link rel="stylesheet" href="style.css">
+<style>
+    /* Basic styles for collapsible FAQ */
+    .collapsible {
+        background-color: #f1f1f1;
+        color: #444;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px; /* Added margin to create spacing */
+    }
+
+    .collapsible:hover {
+        background-color: #ddd;
+    }
+
+    .collapsible.active {
+        background-color: #ccc;
+    }
+
+    .content {
+        padding: 0 15px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #f9f9f9;
+        margin-bottom: 15px; /* Added margin for space below the content */
+    }
+
+    .content p {
+        margin: 10px 0;
+    }
+</style>
+
 </head>
 <body>
     <header class="header">
@@ -20,9 +58,39 @@
     <section class="about-section">
         <h2>Frequently Asked Questions</h2>
         
-        <p><i>Questions will be here</i></p>
-        <p>Got an unanswered question? <a href="contact_us.html">Contact us</a>!</p>
+        <button class="collapsible">What is Speedcubing?</button>
+        <div class="content">
+            <p>Speedcubing is the practice of competitively solving <a href="https://en.wikipedia.org/wiki/World_Cube_Association#Events" target="_blank">puzzles</a> such as the Rubik's Cube as fast as possible.</p>
+        </div>
 
+        <button class="collapsible">How can I participate in a competition?</button>
+        <div class="content">
+            <p>Speedcubing competitions are sanctioned by the World Cube Association (WCA) and organised by members of the local community.</p>
+            <p>You can participate by registering for competitions on Speedcubing New Zealand's website. Visit our <a href="competitions.html">Competitions</a> page to view all of New Zealand's upcoming competitions.</p>
+        </div>
+
+        <button class="collapsible">What is Speedcubing New Zealand?</button>
+        <div class="content">
+            <p>Speedcubing New Zealand (SNZ) is New Zealand's WCA-accredited Regional Organization. We fund and help organise competitions held in New Zealand.</p>
+            </div>
+
+        <button class="collapsible">What is the WCA?</button>
+        <div class="content">
+            <p>The World Cube Association (WCA) is the international governing body of speedcubing. The WCA manages the <a href="https://www.worldcubeassociation.org/regulations/" target="_blank">WCA Regulations</a> and uploads the results from <a href="https://www.worldcubeassociation.org/competitions" target="_blank">competitions</a>, amoung other duties.</p>
+            </div>
+
+        <button class="collapsible">What are the rules for official competitions?</button>
+        <div class="content">
+            <p>The World Cube Association (WCA) sets the rules for official competitions. You can read the WCA Regulations <a href="https://www.worldcubeassociation.org/regulations/" target="_blank">here</a>.</p>
+        </div>
+
+        <button class="collapsible">Why isn't there a competition in my area? How can I organise a competition in my area?</button>
+        <div class="content">
+            <p>SNZ <b>does not</b> organise competitions. Competitions are organised by members of the local speedcubing community. To find out more about organising a competition, please <a href="contact_us.html">reach out to us</a>.</p>
+            </div>
+        <br>
+
+        <p>Got an unanswered question? <a href="contact_us.html">Contact us</a>!</p>
     </section>
 
     <script>
@@ -34,12 +102,12 @@
                 // Toggle active class for the button
                 this.classList.toggle("active");
 
-                if (content.style.height) {
-                    // If content is open, close it by setting height to 0
-                    content.style.height = null;
+                if (content.style.maxHeight) {
+                    // If content is open, close it by setting maxHeight to 0
+                    content.style.maxHeight = null;
                 } else {
-                    // If content is closed, open it by setting height to its scrollHeight
-                    content.style.height = content.scrollHeight + "px";
+                    // If content is closed, open it by setting maxHeight to its scrollHeight
+                    content.style.maxHeight = content.scrollHeight + "px";
                 }
             });
         });
