@@ -107,25 +107,34 @@
         <p>Got an unanswered question? <a href="contact_us.html">Contact us</a>!</p>
     </section>
 
-    <script>
-        const collapsibles = document.querySelectorAll(".collapsible");
-        collapsibles.forEach(button => {
-            button.addEventListener("click", function() {
-                const content = this.nextElementSibling;
+   <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
 
-                // Toggle active class for the button
-                this.classList.toggle("active");
+    collapsibles.forEach(button => {
+        button.addEventListener("click", function () {
+            const content = this.nextElementSibling;
 
-                if (content.style.maxHeight) {
-                    // If content is open, close it by setting maxHeight to 0
-                    content.style.maxHeight = null;
-                } else {
-                    // If content is closed, open it by setting maxHeight to its scrollHeight
-                    content.style.maxHeight = content.scrollHeight + "px";
+            // Close all other collapsibles
+            collapsibles.forEach(otherButton => {
+                if (otherButton !== this) {
+                    otherButton.classList.remove("active");
+                    const otherContent = otherButton.nextElementSibling;
+                    otherContent.style.maxHeight = null; // Collapse the content
                 }
             });
+
+            // Toggle the clicked collapsible
+            this.classList.toggle("active");
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null; // Collapse the content
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px"; // Expand the content
+            }
         });
-    </script>
+    });
+</script>
+
     <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. 
         Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
