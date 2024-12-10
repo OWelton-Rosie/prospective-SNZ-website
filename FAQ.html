@@ -19,24 +19,34 @@
     </header>
     <section class="about-section">
         <h2>Frequently Asked Questions</h2>
-        <p>Needa get Daniel to gimme some FAQs.</p>
+        
+        <p>Questions will be here</p>
         <p>Got an unanswered question? <a href="contact_us.html">Contact us</a>!</p>
-        </section>
 
+    </section>
 
     <script>
         const collapsibles = document.querySelectorAll(".collapsible");
         collapsibles.forEach(button => {
             button.addEventListener("click", function() {
-                this.classList.toggle("active");
                 const content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
+
+                // Toggle active class for the button
+                this.classList.toggle("active");
+
+                if (content.style.height) {
+                    // If content is open, close it by setting height to 0
+                    content.style.height = null;
                 } else {
-                    content.style.display = "block";
+                    // If content is closed, open it by setting height to its scrollHeight
+                    content.style.height = content.scrollHeight + "px";
                 }
             });
         });
     </script>
+    <footer class="footer">
+        <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. 
+        Made with ❤️ by <a href="https://www.worldcubeassociation.org/persons/2023WELT02" target="_blank">Oscar Welton-Rosie</a>.
+    </footer>
 </body>
 </html>
