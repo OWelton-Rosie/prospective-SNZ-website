@@ -3,137 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions &raquo; Speedcubing New Zealand</title>
+    <title>Get involved &raquo; Speedcubing New Zealand</title>
     <link rel="stylesheet" href="style.css">
-<style>
-    /* Basic styles for collapsible FAQ */
-    .collapsible {
-        background-color: #2196F3;
-        color: #f5eeed;
-        cursor: pointer;
-        padding: 10px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-        margin-bottom: 10px; /* Added margin to create spacing */
-    }
-
-    .collapsible:hover {
-        background-color: #050100;
-    }
-
-    .collapsible.active {
-        background-color: #050100;
-    }
-
-    .content {
-        padding: 0 15px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        background-color: #f9f9f9;
-        margin-bottom: 20px; /* Added margin for space below the content */
-    }
-
-    .content p {
-    margin: 10px 0;
-    color: 050408; 
-}
-</style>
-
 </head>
-<body>
+<body class="homepage">
     <header class="header">
         <h1><a href="SNZ_home.html">Speedcubing New Zealand</a></h1>
         <div>
             <strong><a href="competitions.html">Competitions</a></strong>
             <strong><a href="about_us.html">About us</a></strong>
-            <strong><a href="get_involved.html">Get involved</a></strong>
-            <strong><a href="FAQ.html" class="active">Frequently asked questions</a></strong>
+            <strong><a href="get_involved.html" class="active">Get involved</a></strong>
+            <strong><a href="FAQ.html">Frequently asked questions</a></strong>
             <strong><a href="contact_us.html">Contact us</a></strong>
         </div>
     </header>
-    <section class="about-section">
-        <h2>Frequently Asked Questions</h2>
-        <br>
-        <button class="collapsible">What is Speedcubing?</button>
-        <div class="content">
-            <p>Speedcubing is the practice of competitively solving <a href="https://en.wikipedia.org/wiki/World_Cube_Association#Events" target="_blank">puzzles</a> such as the Rubik's Cube as fast as possible.</p>
-        </div>
 
-        
-        <button class="collapsible">What is Speedcubing New Zealand?</button>
-        <div class="content">
-            <p>Speedcubing New Zealand (SNZ) is New Zealand's WCA-accredited Regional Organization. We fund and help organise competitions held in New Zealand.</p>
-            </div>
-
-        <button class="collapsible">What is the WCA?</button>
-        <div class="content">
-            <p>The World Cube Association (WCA) is the international governing body of speedcubing. The WCA manages the <a href="https://www.worldcubeassociation.org/regulations/" target="_blank">WCA Regulations</a> and uploads the results from <a href="https://www.worldcubeassociation.org/competitions" target="_blank">competitions</a>, amoung other duties.</p>
-            </div>
-
-        <button class="collapsible">How fast do I need to be to compete in a competition?</button>
-        <div class="content">
-            <p>To compete you only need to know how to solve the cube! Some competitions have time limits, but they are normally pretty easy to meet.</p>
-            </div>
-
-        <button class="collapsible">How can I participate in a competition?</button>
-        <div class="content">
-            <p>Speedcubing competitions are sanctioned by the World Cube Association (WCA) and organised by members of the local community.</p>
-            <p>You can participate by registering for competitions on Speedcubing New Zealand's website. Visit our <a href="competitions.html">Competitions</a> page to view all of New Zealand's upcoming competitions.</p>
-          
-        </div>
-
-        <button class="collapsible">How should I prepare for a competition?</button>
-        <div class="content">
-              <p>Before attending a competition, you  of course need to be able to solve the cube! You should be familiar with the <a href="https://www.worldcubeassociation.org/regulations/" target="_blank">WCA Regulations</a>. Speedcubing Australia have published a helpful <a href="https://drive.google.com/file/d/19jTj_ociq_XXDMoyoB6ns4BtNfH8n3KW/view" target="_blank">written competitor tutorial</a> which is applicable to New Zealand competitions.</p>
-        </div>
-
-        <button class="collapsible">Are there different age/ability categories?</button>
-        <div class="content">
-            <p>No. All competitors compete on the same level and all ages are welcome. Competitions are incredibly supportive environments and there is always a range of ages and abilities.</p>
-            </div>
-
-
-        <button class="collapsible">Why isn't there a competition in my area? How can I organise a competition in my area?</button>
-        <div class="content">
-            <p>SNZ <b>does not</b> organise competitions. Competitions are organised by members of the local speedcubing community and funded by SNZ. To find out more about organising a competition, please <a href="contact_us.html">reach out to us</a>.</p>
-            </div>
-        <br>
-
-        <p>Got an unanswered question? <a href="contact_us.html">Contact us</a>!</p>
-    </section>
-
-   <script>
-    const collapsibles = document.querySelectorAll(".collapsible");
-
-    collapsibles.forEach(button => {
-        button.addEventListener("click", function () {
-            const content = this.nextElementSibling;
-
-            // Close all other collapsibles
-            collapsibles.forEach(otherButton => {
-                if (otherButton !== this) {
-                    otherButton.classList.remove("active");
-                    const otherContent = otherButton.nextElementSibling;
-                    otherContent.style.maxHeight = null; // Collapse the content
-                }
-            });
-
-            // Toggle the clicked collapsible
-            this.classList.toggle("active");
-
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null; // Collapse the content
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px"; // Expand the content
-            }
-        });
-    });
-</script>
+    <main class="content">
+        <section class="about-section">
+            <p>As a completely volunteer-run organisation, Speedcubing New Zealand relies on volunteers to run competitions, manage our social media presence and make major decisions.</p>
+            <p>We always need new volunteers to fill a variety of roles! You can view our current vacancies at the bottom of this page.</p>
+        </section>
+    
+<section class="about-section">
+            <h3>Volunteering opportunities</h3>
+            <p>As per our <a href="about_us.html">About</a> page, SNZ's staff are split into 3 different categories: WCA Delegates, SNZ Promotional Team and SNZ Governance. For more information on their roles, click <a href="about_us.html">here</a>.</p>
+            <h4>Volunteering at competitions</h4>
+            <p>In addition to our listed SNZ staff, we always need people to perform staffing duties at <a href="competitions.html">competitions</a>, including but not limited to running, judging and scrambling duties. If you are a trusted person (as decided by the competition's WCA Delegates and organisers), you may be encouraged to do data entry (<a href="https://live.worldcubeassociation.org/" target="_blank">WCA Live</a>) duties.</p>
+            <h4>Other opportunities to volunteer</h4>
+            <p>We need staff to perform staffing duties outside of competitions as well. If you have experience with software developing and/or website design, you can view the issues lodged on GitHub pertaining to this website <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/issues" target="_blank">here</a>.</p>
+        </section>
+                
+        <section class="about-section">
+            <h3>Current vacancies</h3>
+            <p><b>Currently, there are no listed vacancies.</b> If you think you have the skills and experience required for a volunteer position with SNZ, <a href="contact_us.html">contact us</a> and we'll keep your details on file and let you know if a position that matches your skilset becomes available.</p>
+        </section>
+    </main>
 
     <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/tree/main" target="_blank">GitHub</a>. 
