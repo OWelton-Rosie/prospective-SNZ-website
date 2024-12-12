@@ -1,5 +1,6 @@
-Here's a list of things I want to do with the website.
+<h1>Todo list</h1>
 
+- Make sure the site conforms to international accessibility standards.
 - Make a custom 404 error message page.
 - Translate the website into Māori using Crowdin. (I'll probably need to scour KRCA for candidates.)
 
