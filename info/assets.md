@@ -1,7 +1,7 @@
 <h1>Assets</h1>
 <br>
-<strong>Cloudflare pages</strong> - web hosting. Tied to: oweltonrosie@gmail.com
+<strong>Cloudflare pages</strong> - web hosting. 
 <br>
-<strong>Formspree</strong> - form submission. Tied to: oweltonrosie@gmail.com
+<strong>Formspree</strong> - form submissions. 
 <br>
-<strong>GitHub</strong> - version control. Tied to: oweltonrosie@gmail.com
+<strong>GitHub</strong> - version control. 
