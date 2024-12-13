@@ -2,7 +2,7 @@
 name: Bug report
 about: If something isn't working as expected, use this option to report it
 title: ''
-labels: 'feature request'
+labels: 'bug'
 assignees: ''
 
 ---
