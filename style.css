@@ -19,6 +19,7 @@ body {
 a {
     color: #f52a2a; /* Default red links */
     text-decoration: none;
+    white-space: nowrap; /* Prevent links from wrapping to a new line */
 }
 
 a:hover {
@@ -73,7 +74,8 @@ a:hover {
 }
 
 .main-section a {
-    display: block; /* Makes links block-level elements */
+    display: inline-block; /* Prevent links from wrapping to a new line */
+    white-space: nowrap; /* Prevent line wrapping */
     margin-bottom: 10px; /* Space below each link */
 }
 
