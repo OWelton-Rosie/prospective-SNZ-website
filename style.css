@@ -54,6 +54,26 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Responsive Header Fix */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap; /* Allow wrapping of header content */
+        padding: 20px; /* Adjust padding for smaller devices */
+    }
+
+    .header h1 {
+        flex: 1 0 100%; /* Ensure the title occupies full width on small screens */
+        text-align: center; /* Center the title */
+        margin-bottom: 10px; /* Add spacing below the title */
+    }
+
+    .header a {
+        flex: 1; /* Allow links to distribute evenly */
+        margin: 5px; /* Add space around links */
+        text-align: center; /* Center-align links */
+    }
+}
+
 /* Section and Container Styling */
 .main-section,
 .about-section {
