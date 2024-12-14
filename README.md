@@ -8,4 +8,4 @@
 
 <h2>Issues & Pulls</h2>
 <p>You're welcome to submit an <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/issues">Issue</a> if there's a problem or you want to see a feature added.</p>
-<p>If you have knowledge of HTML CSS or JavaScript, feel free to make an <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/pulls">Pull Request</a>.</p>
+<p>If you have knowledge of HTML CSS or JavaScript, feel free to make an <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/pulls">Pull request</a>.</p>
