@@ -309,4 +309,11 @@ select {
         word-wrap: break-word; /* Ensure long words break to avoid overflow */
         white-space: normal; /* Allow text to wrap */
     }
+
+    /* Fix for header <h1> overflow */
+    .header h1 {
+        font-size: 1.5rem; /* Reduce the font size for smaller screens */
+        word-wrap: break-word; /* Ensure long words break to avoid overflow */
+        white-space: normal; /* Allow text to wrap */
+    }
 }
