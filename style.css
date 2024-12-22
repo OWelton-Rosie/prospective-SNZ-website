@@ -13,6 +13,7 @@ body {
     height: 100%; /* Full height for flex layout */
     display: flex;
     flex-direction: column; /* Ensure footer sticks to the bottom */
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* General Link Styling */
@@ -30,10 +31,26 @@ a:hover {
 .header {
     background-color: black;
     color: white;
-    padding: 20px; /* Increased height */
+    padding: 20px; /* Padding for spacing */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the left */
+    justify-content: flex-start; /* Ensure content starts from the top */
+    word-wrap: break-word;
+    overflow: visible; /* Allow overflow to ensure content stays visible */
+    min-width: 100%; /* Ensure header doesn't shrink too much */
+    box-sizing: border-box;
+    height: auto; /* Allow the header to grow in height */
+    flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-align: left; /* Left-align header text */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin-bottom: 10px; /* Add some space below the heading */
 }
 
 .header h1 a {
@@ -42,36 +59,16 @@ a:hover {
 }
 
 .header a {
-    display: inline-block; /* Ensure links behave uniformly */
-    color: #808080; /* Gray links in header */
-    margin: 0 10px; /* Uniform spacing between links */
-    font-weight: bold; /* Matches bold style of strong tag */
+    display: inline-block;
+    color: #808080;
+    margin: 5px 0; /* Adjust spacing between links */
+    font-weight: bold;
 }
 
 .header a.active,
 .header a:hover {
-    color: white; /* Active or hovered header links */
+    color: white;
     text-decoration: underline;
-}
-
-/* Responsive Header Fix */
-@media (max-width: 768px) {
-    .header {
-        flex-wrap: wrap; /* Allow wrapping of header content */
-        padding: 20px; /* Adjust padding for smaller devices */
-    }
-
-    .header h1 {
-        flex: 1 0 100%; /* Ensure the title occupies full width on small screens */
-        text-align: center; /* Center the title */
-        margin-bottom: 10px; /* Add spacing below the title */
-    }
-
-    .header a {
-        flex: 1; /* Allow links to distribute evenly */
-        margin: 5px; /* Add space around links */
-        text-align: center; /* Center-align links */
-    }
 }
 
 /* Section and Container Styling */
@@ -83,40 +80,18 @@ a:hover {
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
-.main-section h1 {
-    margin-bottom: 10px; /* Adds 10px of space below the h1 */
-}
-
-.main-section p {
-    margin-top: 10px; /* Adds 10px of space above the p */
-    margin-bottom: 20px; /* Space below paragraphs */
-}
-
-.about-section h1 {
-    margin-bottom: 10px; /* Adds 10px of space below the h1 */
-}
-
-.about-section p {
-    margin-top: 10px; /* Adds 10px of space above the p */
-    margin-bottom: 20px; /* Space below paragraphs */
-}
-
-.main-section a {
-    display: inline-block; /* Prevent links from wrapping to a new line */
-    white-space: nowrap; /* Prevent line wrapping */
-    margin-bottom: 10px; /* Space below each link */
-}
-
-/* Adjusted margin for <h2> elements */
 .main-section h1,
 .main-section h2,
 .main-section h3,
 .about-section h2,
 .about-section h3 {
-    margin-bottom: 5px; /* Space below headings */
-    margin-top: 5px; /* Reduced gap before headings */
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .main-section p,
@@ -125,7 +100,7 @@ a:hover {
 .about-section p,
 .about-section ul,
 .about-section li {
-    margin-bottom: 15px; /* Bigger gap after text or bullets */
+    margin-bottom: 15px;
 }
 
 .about-section ul {
@@ -139,7 +114,7 @@ a:hover {
 
 .about-section h2 a,
 .about-section h3 a {
-    color: black; /* Black links for section titles */
+    color: black;
     text-decoration: none;
 }
 
@@ -276,8 +251,8 @@ select {
 .footer a {
     color: #f52a2a;
     text-decoration: none;
-    margin: 0; /* Ensure no extra spacing from margins */
-    padding: 0; /* Ensure no extra spacing from padding */
+    margin: 0;
+    padding: 0;
 }
 
 .footer a:hover {
@@ -312,15 +287,36 @@ select {
 
     /* Fix for header <h1> overflow */
     .header h1 {
-        font-size: 1.5rem; /* Reduce the font size for smaller screens */
-        word-wrap: break-word; /* Ensure long words break to avoid overflow */
-        white-space: normal; /* Allow text to wrap */
+        font-size: 1.5rem;
+        word-wrap: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        width: 100%;
     }
-    
-    .header h2 {
-        font-size: 1.5rem; /* Reduce the font size for smaller screens */
-        word-wrap: break-word; /* Ensure long words break to avoid overflow */
-        white-space: normal; /* Allow text to wrap */
+
+    /* Fix for <h2> overflow in about-section */
+    .about-section h2 {
+        font-size: 1.5rem;
+        word-wrap: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    /* Ensure header links stack vertically on small screens */
+    .header {
+        flex-direction: column;
+        text-align: left;
+        min-width: 0; /* Allow header to shrink to fit content */
+    }
+
+    .header a {
+        margin-bottom: 10px;
+        font-size: 1rem;
     }
 }
 
