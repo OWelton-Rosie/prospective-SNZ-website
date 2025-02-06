@@ -1,0 +1,127 @@
+/* General body styles */
+body {
+  background-color: rgb(245, 242, 242);
+  color: rgb(5, 5, 5); /* Default text color */
+  font-family: Arial, sans-serif;
+}
+.snz-about-heading,
+.snz-about-p {
+  display: flex;
+  flex-direction: column; /* Ensure it stacks vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;  /* Optional, to allow vertical centering if needed */
+  gap: 20px; /* Space between text and button */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* button style */
+.about-button,
+.upcoming-comps-button,
+.faq-button,
+.contact-button {
+  display: inline-block; /* Default behavior is inline-block, so it fits in well with flexbox */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #3498db;
+  border-radius: 25px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px; /* Adds space between the paragraph and button */
+}
+
+/* Hover effect */
+.about-button:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-5px);
+}
+
+/* Active (clicked) effect */
+.about-button:active {
+  transform: translateY(2px);
+}
+.header {
+  background-color: rgb(134, 118, 118);
+  color: rgb(15, 14, 14);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center items when wrapping */
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+  padding: 10px;
+  background-color: #6b5f5f; /* Match background color */
+}
+
+.header-button {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent text wrapping inside buttons */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      gap: 5px;
+  }
+
+  .header-button {
+      width: 100%; /* Make buttons full-width on small screens */
+      text-align: center;
+  }
+
+  .logo {
+      width: 50px; /* Slightly larger logo for visibility */
+      height: 50px;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  text-align: center;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.delegate,
+.governance,
+.specialist {
+  margin: 20px;
+  text-align: center;
+  max-width: 300px;
+}
