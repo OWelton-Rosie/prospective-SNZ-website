@@ -1,11 +1,11 @@
-<h1>Oscar Welton-Rosie's prospective SNZ website</h1>
+# Oscar's prospective SNZ website
 
-<h2>About the project</h2>
-<p>This project started as a passion project and has ultimately stayed this way. I hope to have this code implemented to an extent in the future.</p>
+## About the project
+This project started as a passion project and has ultimately stayed this way. I hope to have this code implemented to an extent in the future.
 
-<h2>Contact</h2>
-<p>The easiest way to contact me with inquiries relating to this project is Discord, where my username is @iamoscar1.</p>
+## Contact
+The easiest way to contact me with inquiries relating to this project is Discord, where my username is @iamoscar1.
 
-<h2>Issues & Pulls</h2>
-<p>You're welcome to submit an <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/issues">Issue</a> if there's a problem or you want to see a feature added.</p>
-<p>If you have knowledge of HTML CSS or JavaScript, feel free to make an <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/pulls">Pull request</a>.</p>
+## Issues & Pulls
+You're welcome to submit an <a href="https://github.com/OWelton-Rosie/prospective-SNZ-website/issues">Issue</a> if there's a bug or you want to see a feature added.
+
