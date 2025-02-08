@@ -12,13 +12,28 @@
   width: 100%; /* Set the width to 100% of the viewport */
 }
 
-/* Center the content of the header */
 .header {
+  background-color: rgb(134, 118, 118);
+  color: rgb(15, 14, 14);
   display: flex;
   justify-content: center;  /* Centers the content horizontally */
   align-items: center;      /* Centers the content vertically */
   gap: 20px;                /* Adds space between items */
   padding: 20px;            /* Optional: adds some padding around the header */
+}
+
+.footer {
+  background-color: rgb(134, 118, 118);
+  color: rgb(15, 14, 14);
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  gap: 20px;                
+  padding: 20px;           
+}
+
+.footer a {
+  color:white
 }
 
 
