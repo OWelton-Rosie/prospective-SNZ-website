@@ -39,7 +39,8 @@
 .upcoming-comps-section,
 .past-comps-section,
 .faq-section,
-.contact-section {
+.contact-section,
+.error-section {
   background-color: #f5f5f5;
   color: black;
   text-align: left;
