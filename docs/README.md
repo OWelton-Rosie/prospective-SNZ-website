@@ -1,1 +1,1 @@
-# snz-new.pages.dev
+# [snz-new.pages.dev](https://snz-new.pages.dev)
