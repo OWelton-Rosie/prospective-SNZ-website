@@ -4,7 +4,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     let form = event.target;
     let formData = new FormData(form);
 
-    let response = await fetch("https://formspree.io/f/xanyaqja", {
+    let response = await fetch("https://formspree.io/f/mvgzqyla", {
         method: "POST",
         body: formData,
         headers: { 'Accept': 'application/json' }
