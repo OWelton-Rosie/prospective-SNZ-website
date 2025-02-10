@@ -30,19 +30,16 @@
         </nav>
     </header>
 
-
     <section class="contact-section">
         <h1>Contact us</h1>
         <p>Before contacting us, you may wish to view some of our <a href="faq.html">Frequently asked questions</a>.</p>
         <br>
-
     </section>
-
 
     <section class="contact-container">
         <section class="form-section">
             <h3>Fill out the form below and we'll get back to you as soon as possible.</h3>
-            <form action="submit_form.php" method="post">
+            <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -55,29 +52,28 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
                 
-                <button class="submit-button">Submit</button>
+                <button class="submit-button" type="submit">Submit</button>
             </form>
+            <p id="success-message" style="display: none; color: green;">Thank you! Your message has been sent.</p>
         </section>
     
         <section class="social-section">
             <h2>Follow Us!</h2>
-
             <a href="https://www.facebook.com/SpeedcubingNZ/" target="_blank">
-            <img src="./images/fb_icon.jpeg" alt="Facebook" style="width:42px;height:42px;">
+                <img src="./images/fb_icon.jpeg" alt="Facebook" style="width:42px;height:42px;">
             </a>
-
-
         </section>
     </section>
     <br>
     
-    
-
     <footer class="footer">
         <a href="https://github.com/OWelton-Rosie/SNZ-new" target="_blank">
             <img src="./images/octocat.svg" alt="GitHub" style="width:42px;height:42px;">
         </a>
         <p>Website by Oscar Welton-Rosie. <a href="sitemap.html" target="_blank">Sitemap</a>.</p>
     </footer>
+
+     <!-- Link to Form submission JS File -->
+     <script src="./scripts/form.js"></script>
 </body>
 </html>
