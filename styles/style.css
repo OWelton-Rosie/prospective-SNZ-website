@@ -162,3 +162,16 @@ a {
   background-color: #f1f1f1;
   text-align: left; /* Ensures text inside collapsibles is left-aligned */
 }
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Adds space between the icons */
+  align-items: center;
+}
+
+.social-icons img {
+  width: 42px;
+  height: 42px;
+  display: block; /* Ensures no extra space appears below the images */
+}
+
