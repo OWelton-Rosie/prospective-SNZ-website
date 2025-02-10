@@ -12,6 +12,35 @@
   width: 100%; /* Set the width to 100% of the viewport */
 }
 
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.specialist,
+.delegate,
+.governance {
+    margin: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+.member img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+@media (min-width: 1024px) {
+    .team {
+        justify-content: space-around;
+    }
+    .member {
+        flex: 1 1 calc(25% - 40px);
+        max-width: 250px;
+    }
+}
+
+
+
 .header {
   background-color: rgb(134, 118, 118);
   color: rgb(15, 14, 14);
@@ -101,4 +130,17 @@
     text-align: left;
     padding-left: 20px;
   }
+}
+
+/* Collapsible FAQ Sections */
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
