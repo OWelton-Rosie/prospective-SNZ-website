@@ -175,3 +175,9 @@ a {
   display: block; /* Ensures no extra space appears below the images */
 }
 
+.upcoming-comps-section ul li,
+.past-comps-section ul li {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+
