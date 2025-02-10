@@ -170,6 +170,15 @@ img {
   background-color: #3498db;
 }
 
+a {
+  color:#3498db;
+}
+
+a:visited {
+  color:#3498db;
+}
+
+
 .collapsible:after {
   content: '\002B'; /* Plus sign */
   color: white;
@@ -227,3 +236,6 @@ img {
   width: 42px;
   height: 42px;
 }
+
+
+
