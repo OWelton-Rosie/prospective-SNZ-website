@@ -4,8 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (form) {
         // Detect changes in form fields
-        form.addEventListener("input", function () {
-            formModified = true;
+        form.addEventListener("input", function (event) {
+            // Only mark the form as modified if the input is not empty
+            if (event.target.value.trim() !== "") {
+                formModified = true;
+            }
         });
 
         // Prevent leaving the page if the form has been modified
