@@ -1,183 +1,73 @@
-/* General body styles */
-body {
-  background-color: rgb(245, 242, 242);
-  color: rgb(5, 5, 5); /* Default text color */
-  font-family: Arial, sans-serif;
-}
-.snz-about-heading,
-.snz-about-p {
-  display: flex;
-  flex-direction: column; /* Ensure it stacks vertically */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;  /* Optional, to allow vertical centering if needed */
-  gap: 20px; /* Space between text and button */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Since 2016, SNZ has been the driving force behind speedcubing in New Zealand.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Competitions | New Zealand</title>
+    <link rel="icon" type="image/x-icon" href="./images/snz-logo.png">
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sections.css">
+</head>
+<body>
 
-* {
-  box-sizing: border-box;
-}
+<header class="header">
+    <nav class="navbar">
+        <a href="about.html" aria-label="About us">
+            <button class="header-button">About</button>
+        </a>
+        <a href="competitions.html" aria-label="Competitions">
+            <button class="header-button">Competitions</button>
+        </a>
 
-body {
-  font-family: Verdana, sans-serif;
-}
+        <!-- Logo with a fixed size -->
+        <a href="index.html" aria-label="Speedcubing New Zealand Home">
+            <img src="./images/snz-logo.png" alt="SNZ Logo" class="logo">
+        </a>
 
-.mySlides {
-  display: none;
-}
+        <a href="faq.html" aria-label="Frequently Asked Questions">
+            <button class="header-button">FAQ</button>
+        </a>
+        <a href="contact.html" aria-label="Contact us">
+            <button class="header-button">Contact us</button>
+        </a>
+    </nav>
+</header>
 
-img {
-  vertical-align: middle;
-}
+<br>
+<br>
 
-/* button style */
-.about-button,
-.upcoming-comps-button,
-.faq-button,
-.contact-button {
-  display: inline-block; /* Default behavior is inline-block, so it fits in well with flexbox */
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 2px solid #3498db;
-  border-radius: 25px;
-  background-color: #3498db;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-top: 20px; /* Adds space between the paragraph and button */
-}
+<section class="upcoming-comps-section">
+<h1>Upcoming competitions</h1>
 
-/* Hover effect */
-.about-button:hover {
-  background-color: #2980b9;
-  border-color: #2980b9;
-  transform: translateY(-5px);
-}
+<ul>
+    <li><a href="https://www.worldcubeassociation.org/competitions/Sqauckland2025" target="_blank">Sqauckland 2025</a></li>
+    <li><a href="https://www.worldcubeassociation.org/competitions?region=NZ" target="_blank">Johnsonville FTOpen 2025</a></li>
+    <li><a href="https://www.worldcubeassociation.org/competitions/BigandBlindQueenstown2025" target="_blank">Big and Blind Queenstown 2025</a></li>
+    <li><a href="https://www.worldcubeassociation.org/competitions/TwistinginTitirangi2025" target="_blank">Twisting in Titirangi 2025</a></li>
+    <li><a href="https://www.worldcubeassociation.org/competitions/QueensparkOClock2025" target="_blank">Queenspark O'Clock 2025</a></li>
+    <li><a href="https://www.worldcubeassociation.org/competitions/CrazyCubinginChristchurch2025" target="_blank">Crazy Cubing in Christchurch 2025</a></li>
+    <li><a href="https://www.worldcubeassociation.org/competitions/AucklandAutumn2025" target="_blank">Auckland Autumn 2025</a></li>
+    <li><a href="https://www.worldcubeassociation.org/competitions/NZSouthIslandChampionship2025" target="_blank">NZ South Island Championship 2025</a></li>
+    <li><a href="https://www.worldcubeassociation.org/competitions/NZNorthIslandChampionship2025" target="_blank">NZ North Island Championship 2025</a></li>
+</ul>
+</section>
 
-/* Active (clicked) effect */
-.about-button:active {
-  transform: translateY(2px);
-}
+<section class="past-comps-section">
+    <h1>Past competitions</h1>
+    <ul>
+        <li>I ain't typing them all out</li>
+    </ul>
+</section>
 
-.navbar {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  justify-content: center; /* Center items when wrapping */
-  align-items: center;
-  gap: 10px; /* Space between buttons */
-  padding: 10px;
-  background-color: #6b5f5f; /* Match background color */
-}
-
-.header-button {
-  background-color: #4285F4;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-  white-space: nowrap; /* Prevent text wrapping inside buttons */
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar {
-      flex-direction: column; /* Stack buttons vertically on small screens */
-      gap: 5px;
-  }
-
-  .header-button {
-      width: 100%; /* Make buttons full-width on small screens */
-      text-align: center;
-  }
-
-  .logo {
-      width: 50px; /* Slightly larger logo for visibility */
-      height: 50px;
-  }
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  text-align: center;
-}
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.delegate,
-.governance,
-.specialist {
-  margin: 20px;
-  text-align: center;
-  max-width: 300px;
-}
-
-a {
-  color:#4285F4
-}
-
-.collapsible {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #3498db;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-  text-align: left; /* Ensures text inside collapsibles is left-aligned */
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px; /* Adds space between the icons */
-  align-items: center;
-}
-
-.social-icons img {
-  width: 42px;
-  height: 42px;
-  display: block; /* Ensures no extra space appears below the images */
-}
-
-.upcoming-comps-section ul li,
-.past-comps-section ul li {
-    margin-bottom: 10px; /* Adjust as needed */
-}
+<footer class="footer">
+    <a href="https://github.com/OWelton-Rosie/SNZ-new" target="_blank">
+        <img src="./images/octocat.svg" alt="GitHub" style="width:42px;height:42px;">
+    </a>
+    <p>Website by Oscar Welton-Rosie. <a href="sitemap.html" target="_blank">Sitemap</a>.</p>
+</footer>
 
 
+</body>
+</html>
