@@ -1,22 +1,30 @@
-var coll = document.getElementsByClassName("collapsible");
+document.querySelectorAll(".collapsible").forEach(button => {
+  // Ensure each collapsible starts with a "+"
+  button.setAttribute("data-icon", "+");
 
-for (let i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    // Close all collapsibles except the one being clicked
-    for (let j = 0; j < coll.length; j++) {
-      if (coll[j] !== this) {
-        coll[j].classList.remove("active");
-        coll[j].nextElementSibling.style.maxHeight = null;
+  button.addEventListener("click", function () {
+    let content = this.nextElementSibling;
+    let allContents = document.querySelectorAll(".content");
+    let allButtons = document.querySelectorAll(".collapsible");
+
+    // Close all other collapsibles
+    allContents.forEach((item, index) => {
+      if (item !== content) {
+        item.classList.remove("expanded");
+        item.style.maxHeight = null;
+        allButtons[index].setAttribute("data-icon", "+"); // Reset other icons
       }
-    }
-    
+    });
+
     // Toggle the clicked collapsible
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
+    if (content.classList.contains("expanded")) {
+      content.classList.remove("expanded");
       content.style.maxHeight = null;
+      this.setAttribute("data-icon", "+");
     } else {
+      content.classList.add("expanded");
       content.style.maxHeight = content.scrollHeight + "px";
+      this.setAttribute("data-icon", "−");
     }
   });
-}
+});
