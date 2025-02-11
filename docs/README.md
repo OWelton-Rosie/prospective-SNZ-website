@@ -7,6 +7,8 @@
 ├── images <b>Project images (including the favicon)</b>
 ├── scripts <b>JavaScript files</b>
 ├── styles 	<b>Project CSS files</b>  
+  
+  <b>Pages:</b>
 └── 404.html <b>404 page</b>
 └── about.html <b>About page</b>
 └── competitions.html <b>Past and upcoming competitions</b>
