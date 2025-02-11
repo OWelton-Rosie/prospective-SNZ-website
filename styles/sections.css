@@ -88,7 +88,8 @@
   gap: 20px;
 }
 
-.form-section {
+.form-section,
+.news-section {
   max-width: 600px;
   margin: 0; /* Remove auto centering */
   padding: 20px;
@@ -99,7 +100,8 @@
   flex: 2;
 }
 
-.form-section h1 {
+.form-section,
+.news-section h1 {
   text-align: left;
   margin-bottom: 20px;
 }
@@ -120,7 +122,9 @@
     gap: 20px;
   }
 
-  .form-section, .social-section {
+  .form-section, 
+  .social-section,
+  .news-section {
     margin: 0; /* Remove extra margin */
   }
 
