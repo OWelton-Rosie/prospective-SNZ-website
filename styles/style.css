@@ -153,40 +153,12 @@ img {
   background-color: #717171;
 }
 
-
-
-.active, .collapsible:hover {
-  background-color: #3498db;
-}
-
 a {
   color:#3498db;
 }
 
 a:visited {
   color:#3498db;
-}
-
-
-.collapsible:after {
-  content: '\002B'; /* Plus sign */
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212"; /* Minus sign */
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-  text-align: left;
 }
 
 /* Social Icons */
