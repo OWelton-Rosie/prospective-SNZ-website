@@ -6,7 +6,7 @@
 ├── docs <b>Project docs (README, etc)</b>
 ├── images <b>Project images (including the favicon)</b>
 ├── scripts <b>JavaScript files</b>
-├── styles 	<b>Project CSS files</b>  
+├── styles <b>Project CSS files</b>  
   
   <b>Pages:</b>
 └── 404.html <b>404 page</b>
