@@ -1,5 +1,6 @@
 ## Note: this is NOT the current SNZ website! The current SNZ website can be viewed at [https://speedcubing.nz/](https://speedcubing.nz/).
 
+
 ## Project Structure (template from the [CubeClubs GitHub Repo](https://github.com/CubeLabsNZ/CubeClubs)
 <pre>
 <b>snz-new</b>
