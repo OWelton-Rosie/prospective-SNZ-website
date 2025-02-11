@@ -39,8 +39,6 @@
     }
 }
 
-
-
 .header {
   background-color: rgb(134, 118, 118);
   color: rgb(15, 14, 14);
@@ -144,3 +142,42 @@
   outline: none;
   font-size: 15px;
 }
+
+.active, .collapsible:hover {
+  background-color: #3498db;
+}
+
+.collapsible:after {
+  content: '\002B'; /* Plus sign */
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* Minus sign */
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  text-align: left;
+}
+
+.content.expanded {
+  max-height: 200px; /* Adjust this value to control the max expansion */
+  overflow-y: auto;  /* Adds scrolling if content exceeds max height */
+}
+
+.collapsible::after {
+  content: attr(data-icon);
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
