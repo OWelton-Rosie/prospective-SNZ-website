@@ -7,5 +7,8 @@
 ├── images <b>Project images (including the favicon)</b>
 ├── scripts <b>JavaScript files</b>
 ├── styles 	<b>Project CSS files</b>  
-└── Page
+  <br>
+└── index.html <b>Homepage</b>
+└── 
+  
 </b></pre>
