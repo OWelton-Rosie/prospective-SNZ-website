@@ -6,6 +6,7 @@ This is a proposed version made by a nerdy teen and therefore is not particularl
 ## Project Structure (template from the [CubeClubs Repo](https://github.com/CubeLabsNZ/CubeClubs))
 <pre>
 <b>SNZ-new</b>
+  
 <b>Folders:</b>
 ├── docs <b>Project docs (README, etc)</b>
 ├── images <b>Project images (including the favicon)</b>
